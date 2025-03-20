@@ -1,0 +1,267 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<article class="outbreaks-container">
+    <header>
+        <h2>Disease Outbreaks</h2>
+        <div class="nav-links">
+            <a href="{% url 'fmohapp:portal_dashboard' %}">Dashboard</a>
+            <a href="{% url 'fmohapp:portal_logout' %}">Logout</a>
+            <a href="{% url 'fmohapp:outbreak_create' %}" class="create-btn">Create New Outbreak</a>
+        </div>
+    </header>
+
+    {% for outbreak in outbreaks %}
+    <section class="card {% if outbreak.severity == 'High' %}high-severity{% elif outbreak.severity == 'Medium' %}medium-severity{% else %}low-severity{% endif %}">
+        <div class="text-content">
+            <h3>{{ outbreak.title }}</h3>
+            <div class="meta">
+                <span>Severity: {{ outbreak.severity }}</span>
+                <span class="{% if outbreak.is_active %}active-badge{% else %}inactive-badge{% endif %}">
+                    {% if outbreak.is_active %}Active{% else %}Inactive{% endif %}
+                </span>
+                <span>Alert Date: {{ outbreak.alert_date|date:"Y-m-d H:i" }}</span>
+            </div>
+            <p>Location information and other details would go here. Click on Edit to see full details and make changes to this outbreak record.</p>
+            <div class="actions">
+                <a href="{% url 'fmohapp:outbreak_edit' outbreak.pk %}">Edit</a>
+                <!-- <a href="{% url 'fmohapp:outbreak_delete' outbreak.pk %}">Delete</a> -->
+            </div>
+        </div>
+        <div class="visual">
+            <div class="severity-icon">
+                {% if outbreak.severity == "High" %}
+                !
+                {% elif outbreak.severity == "Medium" %}
+                ⚠
+                {% else %}
+                ⚠️
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    {% empty %}
+    <section class="card">
+        <div class="text-content">
+            <h3>No Outbreaks Reported</h3>
+            <p>There are currently no disease outbreaks in the system.</p>
+            <a href="{% url 'fmohapp:outbreak_create' %}">Create New</a>
+        </div>
+        <div class="visual">
+            <div class="severity-icon">📋</div>
+        </div>
+    </section>
+    {% endfor %}
+</article>
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500);
+    
+    .outbreaks-container {
+        margin: auto;
+        display: block;
+        width: calc(60vw + 248px);
+        max-width: calc(920px + 248px);
+        min-width: calc(640px + 248px);
+        font-family: "Poppins", sans-serif;
+        font-size: 21px;
+        color: #000;
+    }
+    
+    .outbreaks-container header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+    
+    .outbreaks-container header h2 {
+        margin: 0;
+        font-size: 2em;
+        color: #2c3e50;
+    }
+    
+    .outbreaks-container .nav-links {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .outbreaks-container .nav-links a {
+        text-decoration: none;
+        color: #000046;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    
+    .outbreaks-container .nav-links a:hover {
+        color: #008751;
+    }
+    
+    .outbreaks-container .create-btn {
+        background: linear-gradient(to right, #008751, #004606);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: transform 0.3s;
+    }
+    
+    .outbreaks-container .create-btn:hover {
+        transform: translateY(-3px);
+    }
+    
+    .outbreaks-container .card {
+        background: linear-gradient(to right, #008751, #000046);
+        border-radius: 24px 24px 24px 48px;
+        padding: 48px 48px 48px 308px;
+        margin: 84px 0;
+        min-width: 640px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        box-shadow: 5px 0 0 0 rgba(204,204,204,0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
+    }
+    
+    .outbreaks-container .card .text-content {
+        display: flex;
+        flex-direction: column;
+        width: calc(60vw - 192px);
+    }
+    
+    .outbreaks-container .card .text-content h3 {
+        margin: 0;
+        font-size: 1.5em;
+        max-width: 30ch;
+        color: #fff;
+    }
+    
+    .outbreaks-container .card .text-content p {
+        margin: 25px 0 24px;
+        color: #fff;
+    }
+    
+    .outbreaks-container .card .text-content .meta {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .outbreaks-container .card .text-content .meta span {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 6px 12px;
+        border-radius: 12px;
+        font-size: 0.8em;
+    }
+    
+    .outbreaks-container .card .text-content .actions {
+        display: flex;
+        gap: 16px;
+        margin-top: 8px;
+    }
+    
+    .outbreaks-container .card .text-content a {
+        border: 3px solid #f2f2f2;
+        color: #ffffff;
+        align-self: flex-start;
+        text-decoration: none;
+        padding: 16px 32px;
+        border-radius: 12px;
+        transition: 400ms all;
+    }
+    
+    .outbreaks-container .card .text-content a:hover {
+        background: #051c5e;
+        color: white;
+    }
+    
+    .outbreaks-container .card .visual {
+        width: 240px;
+        height: 240px;
+        position: absolute;
+        top: -24px;
+        left: 24px;
+        overflow: hidden;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .outbreaks-container .card .visual .severity-icon {
+        font-size: 6em;
+        color: white;
+    }
+    
+    .outbreaks-container .active-badge {
+        background-color: #4CAF50 !important;
+    }
+    
+    .outbreaks-container .inactive-badge {
+        background-color: #F44336 !important;
+    }
+    
+    .outbreaks-container .high-severity { border-left: 10px solid #F44336; }
+    .outbreaks-container .medium-severity { border-left: 10px solid #FF9800; }
+    .outbreaks-container .low-severity { border-left: 10px solid #4CAF50; }
+    
+    @media all and (max-width: 1100px) {
+        .outbreaks-container {
+            width: 100%;
+            min-width: 100%;
+        }
+        .outbreaks-container .card {
+            min-width: 100%;
+        }
+        .outbreaks-container .card .text-content {
+            width: 100%;
+        }
+    }
+    
+    @media all and (max-width: 720px) {
+        .outbreaks-container header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .outbreaks-container .nav-links {
+            flex-direction: column;
+            gap: 12px;
+        }
+        .outbreaks-container .card {
+            margin: 64px 0;
+            padding: 88px 36px 36px;
+            flex-direction: column;
+            border-radius: 24px;
+        }
+        .outbreaks-container .card .text-content h3 {
+            max-width: calc(100% - 150px);
+            font-size: 1em;
+        }
+        .outbreaks-container .card .text-content p,
+        .outbreaks-container .card .text-content a {
+            font-size: 0.8em;
+        }
+        .outbreaks-container .card .text-content .meta {
+            flex-wrap: wrap;
+        }
+        .outbreaks-container .card .text-content .actions {
+            flex-direction: column;
+        }
+        .outbreaks-container .card .visual {
+            width: 120px;
+            height: 120px;
+            right: 16px;
+            left: auto;
+            border-radius: 50%;
+        }
+        .outbreaks-container .card .visual .severity-icon {
+            font-size: 3em;
+        }
+    }
+</style>
+{% endblock %}

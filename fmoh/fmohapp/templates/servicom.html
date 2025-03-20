@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+            <div class="indicator"> 
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- Header Area -->
+    <div id="header-placeholder"></div>
+    <!-- End Header Area -->
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>SERVICOM</h2>
+                        <ul class="bread-list">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start SERVICOM Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>SERVICOM AND FREEDOM OF INFORMATION ACT, 2020</h2>
+                            <h3>Customer Expectation: The SERVICOM Index</h3>
+                            <p>Every customer that requests services from any MDA has a right to expect:</p>
+                            <ul>
+                                <li>To be treated with courtesy, respect, honesty, and professionalism.</li>
+                                <li>That the staff attending to them will listen to their request or question, ask for clarification if necessary, and provide complete, accurate, and precise information.</li>
+                                <li>That the staff attending to them will ensure that they receive services related to the functions of the establishment, fairly, efficiently, and promptly.</li>
+                                <li>To be told in advance how much the service will cost, what standard of service to expect, and how long it will take to be served.</li>
+                                <li>Accurate financial transactions with a receipt or verification of the transaction.</li>
+                                <li>To be told how to obtain redress for poor service, especially where the standards of service are not met.</li>
+                                <li>To receive appropriate directions, via signs, notices, or other means, on how to obtain service or information.</li>
+                                <li>A timely and courteous acknowledgement of their presence when they arrive at a staffed information point.</li>
+                            </ul>
+                            <h3>THE SERVICOM INDEX: Customer Satisfaction</h3>
+                            <p>SERVICOM determined that customers will be satisfied if government establishments pay attention to:</p>
+                            <ul>
+                                <li>Service delivery - willingness to help customers and to provide promised service.</li>
+                                <li>Timeliness – delivering prompt service.</li>
+                                <li>Professionalism – people prefer to be served by knowledgeable, courteous, and confidence-inspiring staff.</li>
+                                <li>Information – Customers like to be told where, how, when, and how long it will take for service to be delivered.</li>
+                                <li>Staff attitude – customers like to be valued and want caring, individualized attention. They also notice the physical (non-verbal) communication that indicates that the staff is happy to give service.</li>
+                            </ul>
+                            <h3>Freedom of Information (FOI) Act, 2011</h3>
+                            <p>The FOI Act, 2011 penalizes the wrongful denial of information, destruction, falsification, or alteration of information or records, or any attempt to do any of these things. The Act encourages public institutions and government agencies to be proactive about publishing information.</p>
+                            <h3>Purpose of the FOI Act</h3>
+                            <p>The Freedom of Information Act 2000 provides public access to information held by public authorities. It does this in two ways: public authorities are obliged to publish certain information about their activities; and members of the public are entitled to request information from public authorities.</p>
+                            <h3>SERVICOM CONTACT</h3>
+                            <p>Servicom Unit, Room 3, 3rd Floor, Phase III, Federal Secretariat, Abuja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End SERVICOM Details Area -->
+    
+    <!-- Footer Area -->
+    <div id="footer-placeholder"></div>
+    <!--/ End Footer Area -->
+    
+{% endblock content %}
+
+{% block scripts %}
+    <!-- jquery Min JS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- jquery Migrate JS -->
+    <script src="{% static 'js/jquery-migrate-3.0.0.js' %}"></script>
+    <!-- jquery Ui JS -->
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <!-- Easing JS -->
+    <script src="{% static 'js/easing.js' %}"></script>
+    <!-- Color JS -->
+    <script src="{% static 'js/colors.js' %}"></script>
+    <!-- Popper JS -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+    <!-- Jquery Nav JS -->
+    <script src="{% static 'js/jquery.nav.js' %}"></script>
+    <!-- Slicknav JS -->
+    <script src="{% static 'js/slicknav.min.js' %}"></script>
+    <!-- ScrollUp JS -->
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <!-- Niceselect JS -->
+    <script src="{% static 'js/niceselect.js' %}"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+    <!-- counterup JS -->
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <!-- Steller JS -->
+    <script src="{% static 'js/steller.js' %}"></script>
+    <!-- Wow JS -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <!-- Magnific Popup JS -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Counter Up CDN JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("/header.html")
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.text();
+                })
+                .then(function(data) {
+                    document.getElementById("header-placeholder").innerHTML = data;
+                })
+                .catch(function(error) {
+                    console.error("Error loading header:", error);
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Load the footer
+            fetch("/footer.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading footer:", error));
+        });
+    </script>
+{% endblock scripts %}

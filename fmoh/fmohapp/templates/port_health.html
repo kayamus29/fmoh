@@ -1,0 +1,63 @@
+{% extends 'base.html' %}  {# Extend base template if available #}
+
+{% load static %}  {# Load Django static files #}
+
+{% block title %}Port Health Division - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Port Health Division</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>PORT HEALTH DIVISION</h2>
+                            
+                            <h3>Vision</h3>
+                            <p>To achieve healthier, safer, and easier international movement of people and goods.</p>
+
+                            <h3>Mission</h3>
+                            <p>To provide prompt and effective first-class services in line with the global best practices for the reduction of morbidity, mortality, and disability due to communicable and non-communicable diseases at Points of Entry/Exit (POEs).</p>
+
+                            <h3>FUNCTIONS OF PORT HEALTH SERVICES</h3>
+                            <p></p>
+                            <ul>
+                                <li>Disease surveillance activities and measures.</li>
+                                <li>Boarding and Inspection of Ships, Aircraft, and Land Vehicles.</li>
+                                <li>Environmental Health activities e.g. sanitation, pollution control (air, dust, noise), waste disposal, etc.</li>
+                                <li>Provision of curative and preventive health care services including referral and laboratory services.</li>
+                                <li>Control of food processing and screening of food handlers.</li>
+                                <li>Disinfection, disinsection, and decontamination of food and food products, equipment, vessels, premises, luggage, parcels, and second-hand goods.</li>
+                                <li>Ad-hoc activities e.g. immunization and issuing yellow cards during pilgrimage or hajj operations.</li>
+                                <li>Public health response to disasters (e.g. plane crashes, deportees, returnees, refugees, etc).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}Public Health - Federal Ministry of Health{% endblock %}
+
+{% block content %}
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Public Health</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Departments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<!-- Start Portfolio Details Area -->
+<section class="pf-details section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="inner-content">
+                    <div class="body-text">
+                        <h2>PUBLIC HEALTH</h2>
+                        <p>The Department of Public Health, created with the mandate to formulate public health policies and guidelines and facilitate their implementation and evaluation in Nigeria, is one of the oldest departments in the Federal Ministry of Health.</p>
+                        
+                        <h3>VISION STATEMENT</h3>
+                        <p>A vibrant department that is responsive to the evolving health needs of Nigerians.</p>
+
+                        <h3>MISSION STATEMENT</h3>
+                        <p>To contribute towards the provision of optimal health for all Nigerians in line with existing National Health Policy.</p>
+
+                        <h3>DEPARTMENTAL MANDATE</h3>
+                        <p>To coordinate the formulation of Public health policies and guidelines; and support their implementation and evaluation in Nigeria through health promotion, surveillance, and prevention.</p>
+
+                        <h3>STRUCTURE / DIVISIONS</h3>
+                        <p></p>
+                        <ul>
+                            <li>Climate Change/Environmental Health</li>
+                            <li>Non-Communicable Diseases Control Programme (NCDs)</li>
+                            <li>Neglected Tropical Diseases (NTDs)</li>
+                            <li>Occupational Health and Safety (OH&S)</li>
+                            <li>Port Health Services (PHS)</li>
+                            <li>National Tuberculosis & Leprosy Control Programme (NTBLCP)</li>
+                            <li>National Malaria Elimination Programme (NMEP)</li>
+                            <li>HIV/AIDS & Viral Hepatitis Programme</li>
+                            <li>Epidemiology Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Portfolio Details Area -->
+
+{% endblock %}

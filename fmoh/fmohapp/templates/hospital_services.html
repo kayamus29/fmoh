@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Hospital Services - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Hospital Services Department</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>Hospital Services Department</h2>
+                            <p>To ensure the provision of safe, quality, affordable, adequate, equitable, and accessible health services to all people in Nigeria.</p>
+
+                            <h2>Divisions</h2>
+                            <ul>
+                                <li>Hospital Services Division</li>
+                                <li>Nursing Division</li>
+                                <li>Regulatory and Professional Schools Division</li>
+                                <li>Dentistry Division</li>
+                                <li>National Blood Transfusion Services/Laboratory Division</li>
+                                <li>Trauma/Medical Emergency Response and Disaster Management Division</li>
+                            </ul>
+
+                            <h2>Programmes</h2>
+                            <ul>
+                                <li>e-Health, Telemedicine, and Continuing Professional Discipline</li>
+                                <li>National Cancer Control Programme and Nuclear Medicine</li>
+                            </ul>
+
+                            <h2>Hospital Services Division</h2>
+                            <p>The Hospital Services Division oversees Teaching Hospitals, Federal Medical Centres, and Specialty Hospitals. These units supervise various Federal Tertiary Hospitals. Recently, the Boards of Management of Federal Tertiary Health Institutions were inaugurated and are now managing the hospitals on a day-to-day basis.</p>
+
+                            <h2>Nursing Division</h2>
+                            <p>The Nursing Division oversees nursing activities in the country with the Nursing and Midwifery Council of Nigeria as its subordinate regulatory agency. Its functions include:</p>
+                            <ul>
+                                <li>Initiating nursing policies and participating in the planning, formulation, implementation, and coordination of national health policies.</li>
+                                <li>Liaising with all state nursing departments in the implementation of planned nursing programmes.</li>
+                                <li>Advising the federal government through the Department of Hospital Services.</li>
+                                <li>Representing the Federal Ministry of Health in the Nursing and Midwifery Council of Nigeria.</li>
+                                <li>Initiating and organizing formal courses, national workshops, and seminars for various categories of nurses.</li>
+                                <li>Planning, establishing, and maintaining a system of basic, post-basic, and continuing education in areas of need.</li>
+                                <li>Responsible for postings and movement of all nurses in the ministry.</li>
+                                <li>Initiating and carrying out surveys and research into nursing practice and education for improvement of services.</li>
+                                <li>Liaising with the Nursing & Midwifery Council of Nigeria in all its dealings with the ministry.</li>
+                                <li>Participating in the appointment, placement, promotion, and discipline of all cadres of nursing and midwives, including the creation of vacancies.</li>
+                            </ul>
+
+                            <h2>Regulatory and Professional Schools Division</h2>
+                            <p>This division oversees Regulatory Bodies, Professional Associations, and Professional Schools that train senior, medium, and junior-level cadres in the Health Sector.</p>
+                            <h3>Health Regulatory Bodies in Nigeria</h3>
+                            <ul>
+                                <li>Medical and Dental Council of Nigeria (MDCN)</li>
+                                <li>Nursing and Midwifery Council of Nigeria (NMCN)</li>
+                                <li>Medical Rehabilitation Therapist Board (MRTB)</li>
+                                <li>Radiographers Registration Board of Nigeria (RRBN)</li>
+                                <li>Optometry and Dispensing Optician Registration Board of Nigeria (ODORBN)</li>
+                                <li>Dental Therapist Registration Board of Nigeria (DTRBN)</li>
+                                <li>Institute of Public Analyst of Nigeria (IPAN)</li>
+                                <li>Health Record Registration Board of Nigeria (HRRBN)</li>
+                                <li>Community Health Practitioner Registration Board of Nigeria (CHPRBN)</li>
+                                <li>Pharmacists Council of Nigeria (PCN)</li>
+                                <li>Institute of Chartered Chemists of Nigeria (ICCON)</li>
+                                <li>Medical Laboratory Science Council of Nigeria (MLSCN)</li>
+                                <li>National Institute of Pharmaceutical Research and Development (NIPRD)</li>
+                                <li>National Primary Health Care Development Agency (NPHCDA)</li>
+                            </ul>
+                            <h3>Health Professional Associations in Nigeria</h3>
+                            <ul>
+                                <li>Nigeria Medical Association (NMA)</li>
+                                <li>Association of Medical Laboratory Scientists of Nigeria (AMLSN)</li>
+                            </ul>
+                            <h3>Health Professional Schools in Nigeria</h3>
+                            <ul>
+                                <li>Federal School of Occupational Therapy, Yaba, Lagos State</li>
+                                <li>Federal School of Medical Laboratory Technology, Jos, Plateau State</li>
+                                <li>Federal School of Dental Technology and Therapy, Enugu</li>
+                                <li>Federal College of Complementary and Alternative Medicine, Abuja</li>
+                                <li>Federal College of Orthopaedic Technology, Igbobi, Lagos State</li>
+                            </ul>
+
+                            <h2>Dentistry Division</h2>
+                            <p>The Dentistry Division advises the Federal Government through the Ministry on all Oral Health matters, policy formulation, resource mobilization, monitoring, and evaluation of such policies, supervision of Oral Health in schools, as well as research institutions and delivery of affordable, effective, and qualitative Oral Health Care Services to Nigerians.</p>
+
+                            <h2>National Blood Transfusion Services Division</h2>
+                            <p>The core mandate of the National Blood Transfusion Services (NBTS) is to provide a centrally coordinated blood transfusion service on a country-wide basis within the National Health Plan; provision of safe, quality, and adequate blood in an equitable and accessible manner.</p>
+
+                            <h2>Trauma/Medical Emergency Response and Disaster Management Division</h2>
+                            <p>This division advises the Federal Government through the Ministry on Health Emergencies and Disaster Management; formulates policies on the same, monitors, and evaluates the implementation of health emergencies and disasters.</p>
+
+                            <h2>e-Health/Telemedicine Programme</h2>
+                            <p>The e-Health/Telemedicine Programme encompasses services such as health-related internet information sites, automated online therapy, online consultations (real-time), online pharmacies, tele-health, home monitoring systems, and virtual clinics. This programme aims to develop a national e-Health Policy as well as a National Regulatory Framework with guidelines to standardize e-Health Care Delivery.</p>
+
+                            <h2>National Cancer Control Programme and Nuclear Medicine</h2>
+                            <p>The National Cancer Control Programme and Nuclear Medicine advises the Federal Government through the Ministry on Cancer Diseases. It also maintains a Cancer Register in the country and develops cancer policies with necessary monitoring and evaluation functions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

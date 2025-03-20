@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="press-releases-container">
+    <h2>Press Releases</h2>
+    <div class="navigation">
+        <a href="{% url 'fmohapp:portal_dashboard' %}">Dashboard</a> | 
+        <a href="{% url 'fmohapp:press_create' %}">Create New Press Release</a> |
+        <a href="{% url 'fmohapp:portal_logout' %}">Logout</a>
+    </div>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date Published</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for press in press_releases %}
+            <tr>
+                <td>{{ press.title }}</td>
+                <td>{{ press.date_published|date:"Y-m-d H:i" }}</td>
+                <td>{{ press.status }}</td>
+                <td class="action-links">
+                    <a href="{% url 'fmohapp:press_edit' press.pk %}">Edit</a> |
+                    <a href="{% url 'fmohapp:press_delete' press.pk %}">Delete</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4" style="text-align: center;">No press releases available.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .press-releases-container {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .press-releases-container h2 {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .press-releases-container .navigation {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .press-releases-container .navigation a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #2980b9;
+        font-weight: bold;
+    }
+    
+    .press-releases-container .navigation a:hover {
+        text-decoration: underline;
+    }
+    
+    .press-releases-container table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .press-releases-container th, 
+    .press-releases-container td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .press-releases-container th {
+        background-color: #2980b9;
+        color: white;
+    }
+    
+    .press-releases-container tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .press-releases-container .action-links a {
+        margin-right: 10px;
+        color: #e74c3c;
+        text-decoration: none;
+    }
+    
+    .press-releases-container .action-links a:hover {
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+        .press-releases-container {
+            padding: 10px;
+        }
+        
+        .press-releases-container table {
+            font-size: 14px;
+        }
+        
+        .press-releases-container th, 
+        .press-releases-container td {
+            padding: 8px;
+        }
+        
+        .press-releases-container .navigation a {
+            margin: 0 8px;
+            display: inline-block;
+        }
+    }
+</style>
+{% endblock %}

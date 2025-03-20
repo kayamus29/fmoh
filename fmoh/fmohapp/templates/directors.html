@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Directors - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Directors</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Directors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>Meet Our Dedicated Directors</h2>
+                            <p>These directors are shaping Nigeria's healthcare future through their expertise and commitment.</p>
+
+                            <!-- Director Profile Card -->
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/alaba.jpg' %}" alt="ALABA RAMON BALOGUN photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">ALABA RAMON BALOGUN</h2>
+                                    <h3 class="director-title">Head - Media & Public Relations</h3>
+                                    <p class="director-bio">Mr. Alaba Ramon Balogun is a seasoned communications expert with over 20 years of experience in public health administration and policy development. He has successfully led numerous health initiatives and is instrumental in shaping Nigeria's public health strategy through effective media engagement and public relations. His commitment to enhancing health literacy and fostering collaboration among stakeholders has significantly contributed to the Ministry's mission of improving the health and well-being of Nigerians.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/ramatu.jpg' %}" alt="RAMATU BELLO photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">RAMATU BELLO</h2>
+                                    <h3 class="director-title">HEAD, ICT</h3>
+                                    <p class="director-bio">Ramatu Bello is a highly skilled professional with extensive experience in information and communication technology within the healthcare sector. As the Head of ICT, she plays a pivotal role in advancing the Ministry's digital transformation initiatives, ensuring the effective integration of technology in healthcare delivery. Her leadership is crucial in enhancing data management, improving communication systems, and fostering innovation across federal medical institutions to optimize patient care and operational efficiency.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/godwin.jpg' %}" alt="Dr. Godwin Ntadom photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Dr. Godwin Ntadom</h2>
+                                    <h3 class="director-title">DIRECTOR, PUBLIC HEALTH</h3>
+                                    <p class="director-bio">Dr. Godwin Ntadom is a distinguished public health professional with extensive experience in health policy development and program implementation. As the Director of Public Health, he is responsible for overseeing national health initiatives aimed at disease prevention, health promotion, and improving health outcomes across Nigeria. His expertise in epidemiology and community health has been instrumental in shaping effective public health strategies, and he is dedicated to fostering partnerships that enhance health services and promote health equity for all Nigerians.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/binyerem.jpg' %}" alt="Dr. Binyerem C. Ukaire photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Dr. Binyerem C. Ukaire, FWACS</h2>
+                                    <h3 class="director-title">DIRECTOR, FAMILY HEALTH</h3>
+                                    <p class="director-bio">Dr. Binyerem C. Ukaire is a highly respected expert in family health with a wealth of experience in maternal and child health, reproductive health, and health policy development. As the Director of Family Health, he leads initiatives aimed at improving health outcomes for families across Nigeria, focusing on comprehensive healthcare services, education, and advocacy. His commitment to enhancing access to quality health services and promoting family well-being has made a significant impact on public health strategies, ensuring that the needs of vulnerable populations are prioritized in national health programs.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/charles.jpg' %}" alt="DR. CHARLES NZELU photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">DR. CHARLES NZELU</h2>
+                                    <h3 class="director-title">DIRECTOR, SPECIAL PROJECTS</h3>
+                                    <p class="director-bio">Dr. Charles Nzelu is a seasoned professional with extensive experience in project management and health program implementation. As the Director of Special Projects, he is responsible for leading innovative health initiatives that address critical health challenges in Nigeria. His expertise in strategic planning and stakeholder engagement has been pivotal in driving successful health interventions and ensuring the effective allocation of resources. Dr. Nzelu is committed to enhancing health outcomes through collaborative efforts and is dedicated to improving the overall health landscape in the country.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/umar.jpg' %}" alt="MR. SULEIMAN UMAR photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">MR. SULEIMAN UMAR</h2>
+                                    <h3 class="director-title">DIRECTOR, GENERAL SERVICES</h3>
+                                    <p class="director-bio">Mr. Suleiman Umar is a dedicated professional with extensive experience in administrative management and operational efficiency within the healthcare sector. As the Director of General Services, he oversees the ministry's logistical and support functions, ensuring that all operational processes run smoothly to facilitate effective healthcare delivery. His expertise in resource management and organizational development has been crucial in optimizing the ministry's services, and he is committed to fostering a collaborative environment that enhances the overall performance of health programs across Nigeria.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/abdullahi.jpg' %}" alt="MR. MOHAMMED ABDULAHI photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">MR. MOHAMMED ABDULAHI</h2>
+                                    <h3 class="director-title">DIRECTOR, PROCUREMENT</h3>
+                                    <p class="director-bio">Mr. Mohammed Abdullahi is a skilled procurement professional with extensive experience in supply chain management and strategic sourcing within the healthcare sector. As the Director of Procurement, he is responsible for overseeing the acquisition of goods and services essential for the effective functioning of health programs in Nigeria. His expertise in negotiation and vendor management ensures that the ministry secures high-quality resources while optimizing costs. Mr. Abdullahi is dedicated to promoting transparency and efficiency in procurement processes, contributing to the overall improvement of healthcare delivery across the country.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/Tile.jpg' %}" alt="Pharm. TILE T. TITUS photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Pharm. TILE T. TITUS</h2>
+                                    <h3 class="director-title">DIRECTOR, TRADITIONAL COMPLEMENTARY ALTERNATIVE MEDICINE (TCAM)</h3>
+                                    <p class="director-bio">Pharm. Tile T. Titus is a distinguished expert in the field of traditional and complementary alternative medicine, with extensive experience in integrating these practices into the broader healthcare system. As the Director of TCAM, he is responsible for promoting the safe and effective use of traditional medicine alongside conventional healthcare practices in Nigeria. His work focuses on policy development, regulation, and education to enhance the quality and accessibility of TCAM services. Pharm. Titus is dedicated to fostering collaboration between traditional healers and healthcare professionals to improve health outcomes and ensure a holistic approach to patient care.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/kamil.jpg' %}" alt="Dr. Kamil Shoretire photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Dr. Kamil Shoretire MBBS, MSc, MHEcons, MPA, FWACS</h2>
+                                    <h3 class="director-title">DIRECTOR, HEALTH PLANNING RESEARCH AND STATISTICS (DHPRS)</h3>
+                                    <p class="director-bio">Dr. Kamil Shoretire is a highly qualified health professional with extensive experience in health planning, research, and statistical analysis. As the Director of Health Planning Research and Statistics, he is responsible for developing and implementing health policies and programs based on robust data analysis and research findings. His expertise in health economics and management enables him to provide valuable insights that inform decision-making and resource allocation within the healthcare system. Dr. Shoretire is committed to enhancing the quality of health services in Nigeria through evidence-based strategies and fostering collaboration among stakeholders to improve health outcomes for all citizens.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/jimoh.jpg' %}" alt="Dr. Jimoh Olawale Salaudeen photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Dr. Jimoh Olawale Salaudeen, mni</h2>
+                                    <h3 class="director-title">DIRECTOR, HEALTH PLANNING RESEARCH AND STATISTICS (DHPRS)</h3>
+                                    <p class="director-bio">Dr. Jimoh Olawale Salaudeen is a distinguished health professional with extensive expertise in health planning, research, and statistical analysis. As the Director of Health Planning Research and Statistics, he is responsible for formulating and implementing health policies and programs grounded in comprehensive data analysis and research findings. His proficiency in health economics and management equips him to provide critical insights that guide decision-making and resource allocation within Nigeria's healthcare system. Dr. Salaudeen is dedicated to improving the quality of health services through evidence-based strategies and fostering collaboration among stakeholders to enhance health outcomes for all Nigerians.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/olubunmi.jpg' %}" alt="Pharm. Dr. Olubunmi Aribeana photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Pharm. Dr. Olubunmi Aribeana</h2>
+                                    <h3 class="director-title">DIRECTOR, FOOD AND DRUG SERVICES</h3>
+                                    <p class="director-bio">Pharm. Dr. Olubunmi Aribeana is a highly qualified pharmaceutical professional with extensive experience in drug regulation, safety, and public health. As the Director of Food and Drug Services, she is responsible for overseeing the regulation and quality assurance of food and pharmaceutical products in Nigeria. Her expertise in pharmacovigilance and drug policy development enables her to ensure that safe and effective medications are accessible to the public. Dr. Aribeana is dedicated to promoting public health through stringent regulatory practices and fostering collaboration among stakeholders to enhance the safety and efficacy of food and drug services across the country.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/nwakaego.jpg' %}" alt="Dr. Nwakaego Chukwukaodinaka photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Dr. Nwakaego Chukwukaodinaka, FMCPATH</h2>
+                                    <h3 class="director-title">DIRECTOR, PPP/DIASPORA</h3>
+                                    <p class="director-bio">Dr. Nwakaego Chukwukaodinaka is a distinguished health professional with extensive expertise in public-private partnerships and diaspora engagement in healthcare. As the Director of PPP/Diaspora, she is responsible for fostering collaborations between the government and private sector stakeholders to enhance healthcare delivery in Nigeria. Her background in pathology and health policy equips her to develop innovative strategies that leverage resources and expertise from the diaspora community. Dr. Chukwukaodinaka is committed to improving health outcomes through strategic partnerships and is dedicated to ensuring that the voices of the diaspora are integrated into national health initiatives.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/ikubolaje.jpg' %}" alt="MR. IKUBOLAJI ENOCH ADEYEMI photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">MR. IKUBOLAJI ENOCH ADEYEMI</h2>
+                                    <h3 class="director-title">HEAD, ANTI-CORRUPTION AND TRANSPARENCY UNIT (ACTU)</h3>
+                                    <p class="director-bio">Mr. Ikubolaji Enoch Adeyemi is a dedicated professional with extensive experience in governance, compliance, and anti-corruption initiatives within the public sector. As the Head of the Anti-Corruption and Transparency Unit (ACTU), he is responsible for implementing policies and programs aimed at promoting transparency, accountability, and integrity within the Ministry of Health. His expertise in risk management and ethical governance enables him to identify and mitigate corruption risks effectively. Mr. Adeyemi is committed to fostering a culture of transparency and ethical conduct, ensuring that public resources are utilized efficiently for the benefit of all Nigerians.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/etu.jpg' %}" alt="ETU-EFEOTOR SAMUEL OBUKOHWO photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">ETU-EFEOTOR SAMUEL OBUKOHWO</h2>
+                                    <h3 class="director-title">DIRECTOR, INTERNAL AUDIT</h3>
+                                    <p class="director-bio">Mr. Etu-Efeotor Samuel Obukohwo is a seasoned professional with extensive experience in internal auditing, risk management, and financial compliance within the public sector. As the Director of Internal Audit, he is responsible for evaluating the effectiveness of internal controls, ensuring compliance with regulations, and promoting accountability within the Ministry of Health. His expertise in financial analysis and operational auditing enables him to identify areas for improvement and enhance the efficiency of health programs. Mr. Obukohwo is dedicated to fostering a culture of transparency and integrity, ensuring that public resources are managed responsibly for the benefit of all Nigerians.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/bakare.jpg' %}" alt="BAKRE MODUPE JULIANAH photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">BAKRE MODUPE JULIANAH (FCA)</h2>
+                                    <h3 class="director-title">DIRECTOR, FINANCE AND ACCOUNT</h3>
+                                    <p class="director-bio">Mrs. Bakre Modupe Julianah is a highly qualified finance professional and a Fellow of the Institute of Chartered Accountants. With extensive experience in financial management, budgeting, and accounting within the public sector, she serves as the Director of Finance and Account. In this role, she is responsible for overseeing the financial operations of the Ministry of Health, ensuring compliance with financial regulations, and promoting sound financial practices. Her expertise in financial analysis and reporting enables her to provide critical insights that support effective decision-making. Mrs. Bakre is dedicated to enhancing the financial integrity of health programs and ensuring that resources are allocated efficiently to improve health outcomes for all Nigerians.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/oluwatobi.jpg' %}" alt="MR. OLUWATOBI ADEWALE OMOSA photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">MR. OLUWATOBI ADEWALE OMOSA</h2>
+                                    <h3 class="director-title">DIRECTOR, LEGAL</h3>
+                                    <p class="director-bio">Mr. Oluwatobi Adewale Omosa is a highly skilled legal professional with extensive experience in health law, regulatory compliance, and public policy. As the Director of Legal, he is responsible for providing legal advice and support to the Ministry of Health, ensuring that all operations and initiatives comply with relevant laws and regulations. His expertise in contract negotiation and dispute resolution enables him to effectively manage legal risks and protect the interests of the Ministry. Mr. Omosa is committed to promoting a culture of legal integrity and accountability, ensuring that the Ministry's actions align with the highest standards of legal and ethical conduct.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/tetshoma.png' %}" alt="Tetshoma Temietan Dafeta photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">Tetshoma Temietan Dafeta</h2>
+                                    <h3 class="director-title">DIRECTOR, HUMAN RESOURCE MANAGEMENT</h3>
+                                    <p class="director-bio">Mrs. Tetshoma Temietan Dafeta is a seasoned human resource professional with extensive experience in talent management, organizational development, and employee relations within the public sector. As the Director of Human Resource Management, she is responsible for overseeing the recruitment, training, and development of personnel within the Ministry of Health. Her expertise in HR policy formulation and implementation ensures that the ministry attracts and retains top talent while fostering a positive work environment. Mrs. Dafeta is dedicated to promoting employee engagement and enhancing workforce performance to support the ministry's mission of improving health outcomes for all Nigerians.</p>
+                                </div>
+                            </div>
+
+                            <div class="director-card even">
+                                <div class="director-image">
+                                    <img src="{% static 'img/ladi.png' %}" alt="LADI BAKO AIYEGBUSI photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">LADI BAKO AIYEGBUSI, mni</h2>
+                                    <h3 class="director-title">DIRECTOR, NUTRITION</h3>
+                                    <p class="director-bio">Mrs. Ladi Bako Aiyegbusi is a dedicated nutrition professional with extensive experience in public health nutrition, program development, and policy advocacy. As the Director of Nutrition, she is responsible for overseeing national nutrition programs aimed at improving dietary practices and addressing malnutrition across Nigeria. Her expertise in community health and nutrition education enables her to implement effective strategies that promote healthy eating habits and improve nutritional outcomes. Mrs. Aiyegbusi is committed to fostering collaboration among stakeholders to enhance food security and ensure that all Nigerians have access to adequate nutrition for a healthier future.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

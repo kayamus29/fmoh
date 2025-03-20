@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Our Reports - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+  <div class="container">
+    <div class="bread-inner">
+      <div class="row">
+        <div class="col-12">
+          <h2>Our Reports</h2>
+          <ul class="bread-list">
+            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+            <li><i class="icofont-simple-right"></i></li>
+            <li class="active">Our Reports</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<div class="container my-5">
+  <h1 class="text-center mb-5">Explore Our Reports</h1>
+  <div class="row">
+    <!-- Family Health Report Card -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Family Health</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Family Health reports analyze trends and outcomes in family healthcare delivery, focusing on preventive care, health education, and community well-being.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:index' %}" class="btn btn-primary">View All Reports</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Public Health Report Card -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Public Health</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Public Health reports provide insights into community health, disease prevention, and emergency response initiatives across the nation.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:index' %}" class="btn btn-primary">View All Reports</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hospital Services Report Card -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Hospital Services</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Hospital Services reports evaluate the performance and quality of hospital care, highlighting achievements and areas for improvement.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:index' %}" class="btn btn-primary">View All Reports</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food and Drugs Report Card -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Food and Drugs</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Food and Drugs reports examine regulatory practices and the safety, quality, and accessibility of pharmaceuticals and food products.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="https://drive.google.com/file/d/1t0nYtB1de3oriifzvkSBSmRAUXA9SIan/view?usp=sharing" class="btn btn-primary">View All Reports</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nutrition Report Card -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Nutrition</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Nutrition reports explore nutritional trends, policy impacts, and initiatives designed to improve public health nutrition.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:index' %}" class="btn btn-primary">View All Reports</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

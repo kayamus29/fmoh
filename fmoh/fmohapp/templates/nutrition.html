@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Nutrition Department - Federal Ministry of Health{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Nutrition Department</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Departments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<!-- Department Details -->
+<section class="pf-details section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="inner-content">
+                    <div class="body-text">
+                        <div class="director-card even">
+                            <div class="director-image">
+                                <img src="{% static 'img/ladi.png' %}" alt="Director's photo">
+                            </div>
+                            <div class="director-info">
+                                <h2 class="director-name">LADI BAKO AIYEGBUSI, mni</h2>
+                                <h3 class="director-title">DIRECTOR, NUTRITION</h3>
+                                <p class="director-bio">
+                                    Mrs. Ladi Bako Aiyegbusi is a dedicated nutrition professional with extensive experience in public health nutrition, 
+                                    program development, and policy advocacy. As the Director of Nutrition, she is responsible for overseeing national 
+                                    nutrition programs aimed at improving dietary practices and addressing malnutrition across Nigeria. 
+                                    Her expertise in community health and nutrition education enables her to implement effective strategies that promote 
+                                    healthy eating habits and improve nutritional outcomes. Mrs. Aiyegbusi is committed to fostering collaboration among 
+                                    stakeholders to enhance food security and ensure that all Nigerians have access to adequate nutrition for a healthier future.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h2>Mandate</h2>
+                        <p></p>
+                        <ul>
+                            <li>>> Formulate Policies, Guidelines, Strategies, Protocols, Training and Data management tools and systems on Optimal Nutrition programmes in Nigeria.</li>
+                            <li>>> Advocate for required resources for Health Sector Nutrition programmes at all levels in Nigeria.</li>
+                            <li>>> Coordinate the development of Human Resource Competency for provision of Optimal Nutrition Services and Information in Nigeria.</li>
+                            <li>>> Coordinate the provision of Optimal Nutrition programmes at all settings in Nigeria.</li>
+                            <li>>> Institutionalize appropriate Mechanisms for Research, Knowledge Management, Monitoring, Evaluation and Learning of Nutrition programmes at all levels.</li>
+                            <li>>> Institutionalize Nutrition Commodities Logistic Management Information System at all levels in Nigeria.</li>
+                            <li>>> Coordinate Stakeholders Engagement in Health Sector Nutrition programmes.</li>
+                            <li>>> Coordinate Media Engagement to promote behavioral change on Healthy Feeding Practices.</li>
+                            <li>>> Coordinate Nutritional Support aimed at Empowering the populace for Nutrition Security.</li>
+                        </ul>
+
+                        <p></p>
+                        <h2>Functions</h2>
+                        <p>The Department is responsible for formulation and development of policy, planning/programming, advocacy, capacity building, 
+                            supportive supervision, research, monitoring and evaluation of health sector nutrition programmes and projects as outlined below:</p>
+
+                        <ul>
+                            <li>>> Coordinate the development/review of Policies, Guidelines, Strategies, Protocols, Training manuals and Data management tools and systems on Nutrition programmes in Nigeria.</li>
+                            <li>>> Coordinate adherence to recommended agenda settings on Nutrition services and practices by stakeholders along the continuum of care.</li>
+                            <li>>> Advocate for resource (human, material and financial) mobilization for health sector Nutrition programmes, managerial and structural processes at all levels.</li>
+                            <li>>> Facilitate capacity building for human resource development in providing nutrition services.</li>
+                            <li>>> Promote the provision of optimal Nutrition services in all settings including emergency situations and management of acute malnutrition at all levels.</li>
+                            <li>>> Coordinate implementation of recommended action on School aged, Adolescents and Older people nutritional care practices.</li>
+                            <li>>> Coordinate equitable access to micronutrients by the populace at all levels.</li>
+                            <li>>> Coordinate research and knowledge sharing on nutrition programmes for health sector and food transformative pathway.</li>
+                            <li>>> Coordinate the use of appropriate technology to track performance, knowledge management, and learning of nutrition programmes for evidence-based planning and decision making.</li>
+                            <li>>> Coordinate the Institutionalization of Nutrition Commodities Logistic and Information Management Systems at all levels.</li>
+                            <li>>> Coordinate local and international bodies and actors in health sector nutrition programmes.</li>
+                            <li>>> Coordinate SBC campaigns to promote healthy and safe feeding practices along life cycle to achieve nutrition security.</li>
+                            <li>>> Coordinate Local and International Conferences in Nutrition.</li>
+                            <li>>> Institutionalize and Coordinate linkages between Nutrition specific and Nutrition sensitive interventions for sustainable nutrition security.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Department Details -->
+{% endblock %}

@@ -1,0 +1,160 @@
+{% load static %}
+
+<!-- Preloader -->
+<div class="preloader">
+    <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+            <svg width="16px" height="12px">
+                <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            </svg>
+        </div>
+    </div>
+</div>
+<!-- End Preloader -->
+
+<!-- Header Area -->
+<header class="header">
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-12">
+                    <!-- Contact -->
+                    <ul class="top-link">
+                        <!-- Replace .html with Django URL tags -->
+                        <li><a href="{% url 'fmohapp:index' %}">Overview</a></li>
+                        <li><a href="{% url 'fmohapp:directors' %}">Directors</a></li>
+                        <li><a href="{% url 'fmohapp:contact' %}">Contact</a></li>
+                        <!-- Only do this if you have a `faq` URL in urls.py -->
+                        <li><a href="{% url 'fmohapp:faq' %}">FAQ</a></li>
+                    </ul>
+                    <!-- End Contact -->
+                </div>
+                <div class="col-lg-6 col-md-7 col-12">
+                    <!-- Top Contact -->
+                    <ul class="top-contact">
+                        <li><i class="fa fa-envelope"></i><a href="mailto:info@health.gov.ng">info@health.gov.ng</a></li>
+                        <li><a href="https://twitter.com/Fmohnigeria" target="_blank"><i class="icofont-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/fmohnigeria/" target="_blank"><i class="icofont-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/fmoh_nigeria/" target="_blank"><i class="icofont-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Topbar -->
+
+    <!-- Header Inner -->
+    <div class="header-inner">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <!-- Start Logo -->
+                        <div class="logo">
+                            <!-- Use Django’s url tag for the homepage link -->
+                            <a href="{% url 'fmohapp:index' %}">
+                                <img src="{% static 'img/logo1.png' %}" alt="Logo">
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                        <!-- Mobile Nav -->
+                        <div class="mobile-nav"></div>
+                        <!-- End Mobile Nav -->
+                    </div>
+                    <div class="col-lg-7 col-md-9 col-12">
+                        <!-- Main Menu -->
+                        <div class="main-menu">
+                            <nav class="navigation">
+                                <ul class="nav menu">
+                                    <li class="active">
+                                        <a href="#">Home <i class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% url 'fmohapp:index' %}">Overview</a></li>
+                                            <li><a href="{% url 'fmohapp:directors' %}">Directors</a></li>
+                                            <li><a href="{% url 'fmohapp:the_permanent_secretary' %}">The Permanent Secretary</a></li>
+                                            <li><a href="{% url 'fmohapp:hospitals' %}">Hospitals</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Programs <i class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown scrollable-dropdown">
+                                            <!-- Keep external or standalone program links as needed -->
+                                            <li><a href="programs/national_mental_health_program.html">National Mental Health Program</a></li>
+                                            <!-- Example fix for Food and Drugs Program if it’s a separate file -->
+                                            <li><a href="{% url 'fmohapp:food_and_drugs_programs' %}">Food and Drugs Program</a></li>
+                                            <li><a href="{% url 'fmohapp:cancer_control_program' %}">Cancer Control Programme</a></li>
+                                            <li><a href="https://dhis2nigeria.org.ng/dhis/dhis-web-commons/security/login.action">DHIS2 Nigeria</a></li>
+                                            <li><a href="https://speed.zarinet.net/">IHVN-IRCE-SPEED Project</a></li>
+                                            <li><a href="https://phs-health-staging.azurewebsites.net/forms">NITP Registration</a></li>
+                                            <li><a href="https://bh4a.healthweakness.com/">Better Health for All</a></li>
+                                            <li><a href="https://somlpforr.org.ng/">Soml P for R</a></li>
+                                            <li><a href="https://www.nationaleyehealthprogramme.org/">National Eye Health Programme</a></li>
+                                            <li><a href="https://www.nascp.gov.ng/">Tuberculosis Control</a></li>
+                                            <li><a href="https://nascp.gov.ng/">NASCP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Departments <i class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown scrollable-dropdown">
+                                            <!-- Example: replace .html with Django URL tags -->
+                                            <li><a href="{% url 'fmohapp:information' %}">Human Resource</a></li>
+                                            <li><a href="{% url 'fmohapp:information' %}">Information</a></li>
+                                            <li><a href="{% url 'fmohapp:general_services' %}">General Services</a></li>
+                                            <li><a href="{% url 'fmohapp:foodanddrugs_services' %}">Food &amp; Drug Services</a></li>
+                                            <li><a href="{% url 'fmohapp:hospital_services' %}">Hospital Services</a></li>
+                                            <li><a href="{% url 'fmohapp:ict' %}">ICT</a></li>
+                                            <li><a href="{% url 'fmohapp:family_health' %}">Family Health</a></li>
+                                            <li><a href="{% url 'fmohapp:nutrition' %}">Nutrition</a></li>
+                                            <li><a href="{% url 'fmohapp:public_health' %}">Public Health</a></li>
+                                            <li><a href="{% url 'fmohapp:procurement' %}">Procurement</a></li>
+                                            <li><a href="{% url 'fmohapp:reform_coordination' %}">Reform Coordination</a></li>
+                                            <li><a href="{% url 'fmohapp:legal_services' %}">Legal Services</a></li>
+                                            <li><a href="{% url 'fmohapp:port_health' %}">Port Health</a></li>
+                                            <li><a href="{% url 'fmohapp:servicom' %}">Servicom</a></li>
+                                            <li><a href= "{% url 'fmohapp:special_projects' %}">Special Projects</a></li>
+                                            <li><a href="{% url 'fmohapp:anti_corruption' %}">Anti-Corruption</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Resources <i class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% url 'fmohapp:hprs_policy_documents' %}">HPRS Policy Documents</a></li>
+                                            <li><a href="{% url 'fmohapp:policy_documents' %}">Policy Documents</a></li> 
+                                            <li><a href="{% url 'fmohapp:reports' %}">Reports</a></li>
+                                            <li ><a href="{% url 'fmohapp:publications' %}">Publictions</a></li>
+                                            <li><a href="{% url 'fmohapp:newsletter' %}">Newsletter</a></li>
+                                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScVmDxIdoaUbh_OxPd8aX_yIl1An95WBDcruLJqmy0ln9g_kw/viewform">HP CONFERENCE 2024</a></li>
+                                            <li><a href="{% url 'fmohapp:nchmemos' %}">NCH Memos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Media <i class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% url 'fmohapp:pressrelease1' %}">Press Releases</a></li>
+                                            <li><a href="{% url 'fmohapp:picturegallery' %}">Picture Gallery</a></li>
+                                            <li><a href="{% url 'fmohapp:videogallery' %}">Video Gallery</a></li> 
+                                            <li><a href="{% url 'fmohapp:reports' %}">Speeches</a></li>
+                                            <li ><a href="{% url 'fmohapp:publications' %}">Upcoming Events</a></li>
+                                        </ul>
+                                    </li>
+                                   <!--<li><a href="{% url 'fmohapp:contact' %}">Cntact</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--/ End Main Menu -->
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="get-quote">
+                            <a href="tel:+234112" class="btn">REPORT EMERGENCY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->

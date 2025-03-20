@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}CM Pate Details Nationwide Emergency and Ambulance Programme - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs overlay">
+    <div class="container">
+      <div class="bread-inner">
+        <div class="row">
+          <div class="col-12">
+            <h2>Press Release</h2>
+            <ul class="bread-list">
+                <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+              <li><i class="icofont-simple-right"></i></li>
+              <li><a href="{% url 'fmohapp:pressrelease1' %}">Press Releases</a></li>
+              <li><i class="icofont-simple-right"></i></li>
+              <li class="active">CM Pate Details Nationwide Emergency and Ambulance Programme</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
+
+  <!-- Press Release Content -->
+  <section class="news-single section">
+    <div class="container">
+      <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-8 col-12">
+          <div class="single-main">
+            <!-- News Head -->
+            <div class="news-head">
+              <img src="{% static 'img/blog33.jpg' %}" alt="Nationwide Emergency and Ambulance Programme">
+            </div>
+            <!-- News Title -->
+            <h1 class="news-title">CM Pate Details Nationwide Emergency and Ambulance Programme</h1>
+            <!-- Meta Information -->
+            <div class="meta">
+              <div class="meta-left">
+                <span class="author"><a href="#"><img src="{% static 'img/author3.jpg' %}" alt="#">Emeka Nwankwo</a></span>
+                <span class="date"><i class="fa fa-clock-o"></i>January 28, 2025</span>
+              </div>
+              <div class="meta-right">
+                <span class="comments"><a href="#"><i class="fa fa-comments"></i>8 Comments</a></span>
+                <span class="views"><i class="fa fa-eye"></i>25K Views</span>
+              </div>
+            </div>
+            <!-- News Text -->
+            <div class="news-text">
+              <p>In a comprehensive briefing earlier this week, the Coordinating Minister of Health, CM Pate, detailed the rollout of a nationwide emergency and ambulance programme designed to revolutionize emergency healthcare delivery across Nigeria. This ambitious initiative aims to ensure rapid response and effective patient transport during critical medical emergencies, particularly in remote and underserved areas.</p>
+              <p>The programme will see the deployment of modern ambulance fleets equipped with advanced life support systems, as well as the establishment of centralized dispatch centers to streamline emergency response times. "Timely intervention is crucial, and our goal is to leave no Nigerian behind when it comes to accessing emergency care," CM Pate remarked during the briefing.</p>
+              <p>Alongside these developments, the Ministry is partnering with both public and private sector stakeholders to train healthcare professionals in advanced emergency care protocols and to integrate digital tracking systems that optimize ambulance dispatch operations.</p>
+              <blockquote class="overlay">
+                <p>"This initiative marks a significant step forward in transforming our emergency services. With a coordinated approach, we can ensure that every life is given the best chance at survival." - CM Pate</p>
+              </blockquote>
+              <p>The nationwide rollout is set to commence immediately, with pilot projects already underway in several states. This initiative underlines the Ministry's unwavering commitment to enhancing emergency response capabilities and safeguarding public health across the country.</p>
+            </div>
+            <!-- Social Share and Navigation -->
+            <div class="blog-bottom">
+              <!-- Social Share -->
+              <ul class="social-share">
+                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
+              <!-- Next/Previous Navigation -->
+              <ul class="prev-next">
+                <li class="prev"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="col-lg-4 col-12">
+          <div class="main-sidebar">
+            <!-- Search Widget -->
+            <div class="single-widget search">
+              <div class="form">
+                <input type="email" placeholder="Search Here...">
+                <a class="button" href="#"><i class="fa fa-search"></i></a>
+              </div>
+            </div>
+            <!-- Recent News Widget -->
+            <div class="single-widget recent-post">
+              <h3 class="title">Recent News</h3>
+              <div class="single-post">
+                <div class="image">
+                  <img src="{% static 'img/blog11.jpg' %}" alt="#">
+                </div>
+                <div class="content">
+                  <h5><a href="{% url 'fmohapp:pressrelease1' %}">2025 World Cancer Day: FG to Establish, Upgrade Tertiary Health Institutions for Cancer Care Services</a></h5>
+                  <ul class="comment">
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i>Feb 06, 2025</li>
+                    <li><i class="fa fa-commenting-o" aria-hidden="true"></i>0</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="single-post">
+                <div class="image">
+                  <img src="{% static 'img/blog22.jpg' %}" alt="#">
+                </div>
+                <div class="content">
+                  <h5><a href="{% url 'fmohapp:pressrelease2' %}">FG Emphasizes Health Education & Prevention for Healthy Population</a></h5>
+                  <ul class="comment">
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i>Feb 01, 2025</li>
+                    <li><i class="fa fa-commenting-o" aria-hidden="true"></i>12</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Tags Widget -->
+            <div class="single-widget side-tags">
+              <h3 class="title">Tags</h3>
+              <ul class="tag">
+                <li><a href="#">Emergency Care</a></li>
+                <li><a href="#">Ambulance Service</a></li>
+                <li><a href="#">CM Pate</a></li>
+                <li><a href="#">Health Initiative</a></li>
+                <li><a href="#">Press Release</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Press Release Content -->
+{% endblock content %}
+
+{% block extra_js %}
+  <!-- Optional: Additional JavaScript for this post -->
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

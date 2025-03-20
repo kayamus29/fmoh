@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Hospital Services - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Hospital Services</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Hospital Services Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<div class="container my-5">
+  <h1 class="text-center mb-4">Hospital Services Policy</h1>
+  <p class="text-center lead mb-5">
+    Explore our key resource materials and policy documents guiding Hospital Services initiatives.
+  </p>
+
+  <!-- Resource Materials List -->
+  <div class="list-group-item d-flex justify-content-between align-items-center">
+    National Eye Health Strategic Development Plan (2024-2028)
+    <a href="https://health.gov.ng/docs/National%20Eye%20Health%20Strategic%20Development%20Plan%20(2024-2028).pdf" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    The Nigeria Glaucoma Guideline and Toolkit Final
+    <a href="https://health.gov.ng/docs/The%20Nigeria%20Glaucoma%20Guideline%20and%20Toolkit%20Final.pdf" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    National Patient Safety and Care Quality Policy & Implementation Strategy 2024
+    <a href="https://drive.google.com/file/d/1j6w2EVVRJo4Dy-BFbVTp_hOX6gw-0c3h/view?usp=drive_link" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    National Strategy for the Scale-Up of Medical Oxygen in Health Facilities (2023-2027)
+    <a href="https://drive.google.com/file/d/1ooDpVia8GwJ0LVNjPxy57O46r5yyfOn6/view?usp=sharing" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    National Clinical Guidelines on Oxygen Use
+    <a href="https://drive.google.com/file/d/1ooDpVia8GwJ0LVNjPxy57O46r5yyfOn6/view?usp=sharing" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    National Policy on Medical Oxygen in Health Facilities
+    <a href="#" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    Nigeria Standard Treatment Guidelines
+    <a href="https://drive.google.com/file/d/1_Ep_rh3wujXoKAnfmW8yE4_PmTl2IsOe/view?usp=sharing" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    Patient Safety Policy Document Finalised
+    <a href="https://drive.google.com/file/d/1wMjmmpzo9T9BqHFF4o49ruRvPk6P1LIN/view?usp=drive_link" class="btn btn-sm btn-primary">Download</a>
+</div>
+    <!-- Continue adding additional items as needed -->
+  </div>
+</div>
+{% endblock %}

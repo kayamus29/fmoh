@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">Admin Dashboard</h2>
+    
+    <div class="row">
+        <!-- Manage Press Releases -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Press Releases</h5>
+                    <p class="card-text">Create, edit, or delete press releases.</p>
+                    <a href="{% url 'fmohapp:press_list' %}" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Newsletters -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Newsletters</h5>
+                    <p class="card-text">Create and send newsletters.</p>
+                    <a href="{% url 'fmohapp:newsletter_list' %}" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Disease Outbreaks -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Disease Outbreaks</h5>
+                    <p class="card-text">Publish or update health advisories.</p>
+                    <a href="{% url 'fmohapp:outbreak_list' %}" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Manage Media Gallery -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Media Gallery</h5>
+                    <p class="card-text">Upload and manage images and videos.</p>
+                    <a href="{% url 'fmohapp:media_list' %}" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+
+       
+
+        
+    </div>
+</div>
+{% endblock %}

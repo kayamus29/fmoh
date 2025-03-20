@@ -1,0 +1,102 @@
+<!-- fmohapp/templates/portal/newsletter_list.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Newsletters</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2980b9;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .action-links a {
+            margin-right: 10px;
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        .action-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Newsletters</h2>
+    <div class="navigation">
+        <a href="{% url 'fmohapp:portal_dashboard' %}">Dashboard</a> | 
+        <a href="{% url 'fmohapp:newsletter_create' %}">Create New Newsletter</a> |
+        <a href="{% url 'fmohapp:portal_logout' %}">Logout</a>
+    </div>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.title }}</td>
+                <td>{{ item.date|date:"Y-m-d" }}</td>
+                <td class="action-links">
+                    <a href="{% url 'fmohapp:newsletter_edit' item.pk %}">Edit</a> |
+                    <a href="{% url 'fmohapp:newsletter_delete' item.pk %}">Delete</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3" style="text-align: center;">No newsletters available.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+{% endblock content %}

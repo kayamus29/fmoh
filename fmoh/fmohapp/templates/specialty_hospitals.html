@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Hospital Listings - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Custom CSS for primary color -->
+<style>
+  .primary-bg {
+    background-color: #008751 !important;
+    color: #ffffff !important;
+  }
+</style>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Specialty Hospitals</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Food and Drug Programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<div class="container my-5">
+
+  <!-- Federal Neuro-Psychiatric Hospitals Card -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header primary-bg">
+      <h3 class="mb-0 text-white">Federal Neuro-Psychiatric Hospitals</h3>
+    </div>
+    <div class="card-body p-0">
+      <table class="table table-bordered table-striped table-hover m-0">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name of Hospital</th>
+            <th>Location</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Federal Neuro-Psychiatric Hospital</td>
+            <td>Maiduguri</td>
+            <td>Borno</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Federal Neuro-Psychiatric Hospital</td>
+            <td>Calabar</td>
+            <td>Cross-River</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Federal Neuro-Psychiatric Hospital</td>
+            <td>Uselu, Benin-City</td>
+            <td>Edo</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Federal Neuro-Psychiatric Hospital</td>
+            <td>Enugu</td>
+            <td>Enugu</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Federal Neuro-Psychiatric Hospital</td>
+            <td>Kaduna</td>
+            <td>Kaduna</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Federal Neuro-Psychiatric Hospital</td>
+            <td>Yaba</td>
+            <td>Lagos</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Neuro-Psychiatric Hospital</td>
+            <td>Aro, Abeokuta</td>
+            <td>Ogun</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Federal Neuro-Psychiatric Hospital</td>
+            <td>Kware</td>
+            <td>Sokoto</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- National Orthopaedic Hospitals Card -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header primary-bg">
+      <h3 class="mb-0 text-white">National Orthopaedic Hospitals</h3>
+    </div>
+    <div class="card-body p-0">
+      <table class="table table-bordered table-striped table-hover m-0">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name of Hospital</th>
+            <th>Location</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>National Orthopaedic Hospital</td>
+            <td>Enugu</td>
+            <td>Enugu</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>National Orthopaedic Hospital</td>
+            <td>Igbobi</td>
+            <td>Lagos</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>National Orthopaedic Hospital</td>
+            <td>Dala</td>
+            <td>Kano</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- National Eye Centre Card -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header primary-bg">
+      <h3 class="mb-0 text-white">National Eye Centre</h3>
+    </div>
+    <div class="card-body p-0">
+      <table class="table table-bordered table-striped table-hover m-0">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name of Hospital</th>
+            <th>Location</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>National Eye Centre</td>
+            <td>Kaduna</td>
+            <td>Kaduna</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- National Ear Care Centre Card -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-header primary-bg">
+      <h3 class="mb-0 text-white">National Ear Care Centre</h3>
+    </div>
+    <div class="card-body p-0">
+      <table class="table table-bordered table-striped table-hover m-0">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name of Hospital</th>
+            <th>Location</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>National Ear Care Centre</td>
+            <td>Kaduna</td>
+            <td>Kaduna</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Picture Gallery - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+    <!-- Lightbox CSS for gallery preview (optional) -->
+    <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Picture Gallery</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Picture Gallery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Gallery Section -->
+    <section class="gallery-section section">
+        <div class="container">
+            
+            <!-- Director Profile Card -->
+            <div class="director-card odd">
+                <div class="director-image">
+                    <img src="{% static 'img/pic gallery1.jpg' %}" alt="ALABA RAMON BALOGUN photo" class="img-fluid">
+                </div>
+                <div class="director-info">
+                    <h2 class="director-name">The Government of Nigeria is committed in addressing the triple burden of malnutrition in the country</h2>
+                    <p class="director-bio">The Government of Nigeria is committed in addressing the triple burden of malnutrition in the country.</p>
+                </div>
+            </div>
+
+            <div class="director-card even">
+                <div class="director-image">
+                    <img src="{% static 'img/pic gallery1.jpg' %}" alt="RAMATU BELLO photo" class="img-fluid">
+                </div>
+                <div class="director-info">
+                    <h2 class="director-name">THE ONGOING MIYCN</h2>
+                    <p class="director-bio">The Ongoing Second Batch of MIYCN Training Of Trainee Across All The States Of The Country, Including FCT.</p>
+                </div>
+            </div>
+            <div class="director-card odd">
+                <div class="director-image">
+                    <img src="{% static 'img/ladi.png' %}" alt="ALABA RAMON BALOGUN photo" class="img-fluid">
+                </div>
+                <div class="director-info">
+                    <h2 class="director-name">The Ongoing MIYCN Training of Trainee across all the States of the Country, including FCT.</h2>
+                    <p class="director-bio">Day5 24/06/2024 MIYCN TRAINING OF TRAINERS Module5 (session 10) participants group facilitators, by Emmanuel atanyi and Asma,u nasipi NASARAWA STATE</p>
+                </div>
+            </div>
+            <div class="director-card even">
+                <div class="director-image">
+                    <img src="{% static 'img/pic gallery1.jpg' %}" alt="RAMATU BELLO photo" class="img-fluid">
+                </div>
+                <div class="director-info">
+                    <h2 class="director-name">CALL FOR APPLICATION FOR ESSAY COMPETITION TO COMMEMORATE 2024 CIVIL SERVCIE WEEK</h2>
+                    <p class="director-bio">CALL FOR APPLICATION FOR ESSAY COMPETITION</p>
+                </div>
+            </div>
+
+
+            <!-- Pagination Controls -->
+            <div class="pagination-wrapper">
+                <ul class="pagination">
+                    {% if page_obj.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                        </li>
+                    {% endif %}
+                    
+                    {% for num in page_obj.paginator.page_range %}
+                        {% if page_obj.number == num %}
+                            <li class="page-item active">
+                                <span class="page-link">{{ num }}</span>
+                            </li>
+                        {% else %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    
+                    {% if page_obj.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Lightbox JS (for image preview) -->
+    <script src="{% static 'js/lightbox.js' %}"></script>
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

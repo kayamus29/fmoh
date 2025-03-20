@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Food and Drug Services - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Food and Drug Services Department</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>Food and Drug Services Department</h2>
+                            <p>The Department of Food and Drug Services was established in 1993 following the excision of the National Agency for Food and Drug Administration and Control (NAFDAC) from the then Food and Drug Administration and Control (FDAC) department.</p>
+
+                            <h2>Vision</h2>
+                            <p>A department that is resolutely committed to, and focal in, promoting access to safe and wholesome food and medicines and other health products for effective health care delivery in Nigeria.</p>
+
+                            <h2>Mission</h2>
+                            <p>To promote the health of all Nigerians through the formulation of national policies, development of guidelines and strategies, and initiation of legislation aimed at ensuring that food, drugs, cosmetics, medical devices, and packaged water available in Nigeria are safe and efficacious. This includes ensuring the provision of ethical pharmaceutical services in the public and private sectors of our health care delivery system nationwide.</p>
+
+                            <h2>Mandate</h2>
+                            <p>The mandate of the Food and Drug Services Department includes:</p>
+                            <ul>
+                                <li>Promoting the health of all Nigerians through the formulation of national policies, development of guidelines and strategies, and initiation of legislation aimed at ensuring that food, medicines, and other health commodities, chemicals, cosmetics, medical devices, and drinking water available in Nigeria are safe and efficacious.</li>
+                                <li>Liaison between the Federal Ministry of Health, its Agencies/Parastatals, and other bodies on issues affecting food, drugs, chemicals, cosmetics, medical devices, and other health commodities.</li>
+                                <li>Training of Intern Pharmacists and other Scientists.</li>
+                            </ul>
+
+                            <h2>Agencies/Parastatals Under FDS</h2>
+                            <ul>
+                                <li>Pharmacists Council of Nigeria (PCN)</li>
+                                <li>National Institute for Pharmaceutical Research & Development (NIPRD)</li>
+                                <li>National Agency for Food and Drug Administration & Control (NAFDAC)</li>
+                                <li>Institute of Chartered Chemists of Nigeria (ICCON)</li>
+                                <li>Institute of Public Analysts of Nigeria (IPAN)</li>
+                            </ul>
+
+                            <h2>Structure of Divisions/Programmes</h2>
+
+                            <h3>I. Food, Chemical and Water Safety Division</h3>
+                            <ul>
+                                <li>Food Safety and Quality Programme (FSQP)</li>
+                                <li>Chemical Safety Management Programme (CSMP)</li>
+                                <li>Water Safety Management Programme (WSMP)</li>
+                                <li>Cosmetics Safety Management Programme (CSMP)</li>
+                            </ul>
+
+                            <h3>II. Pharmaceutical Services Division (PSD)</h3>
+                            <ul>
+                                <li>Hospital Pharmacy</li>
+                                <li>Narcotics & Drug Abuse Branch</li>
+                                <li>National Drug Policy/Essential Medicine List (NDP/EML) Programme</li>
+                                <li>National Drug & Poison Information Centre (NDPIC)</li>
+                            </ul>
+
+                            <h3>III. Drug Vaccine Development Division (DVD)</h3>
+                            <ul>
+                                <li>Federal Pharmaceutical Manufacturing Laboratory (FEPMAL)</li>
+                                <li>Federal Medical Warehouses (Federal Central Medical Stores, Oshodi, Lagos; Federal Medical Warehouse, Oshodi, Lagos (PPP); Abuja Premier Medical Warehouse (PPP))</li>
+                                <li>Federal Central Medical Stores (FCMS)</li>
+                                <li>Warehouse and Distribution Coordinating Unit</li>
+                            </ul>
+
+                            <h3>IV. Office of the Director, Food and Drug Services</h3>
+                            <ul>
+                                <li>National Product Supply Chain Management Programme (NPSCMP)</li>
+                                <li>Monitoring, Evaluation and Information/Special Duties Unit (PMEI/SD)</li>
+                                <li>Coordinating/Liaison Unit between Agencies/Parastatals under the department.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

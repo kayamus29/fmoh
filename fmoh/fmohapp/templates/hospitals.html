@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Hospitals - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Custom Styles for Buttons -->
+    <style>
+        .button-container {
+            margin-top: 20px !important;
+            text-align: center !important;
+        }
+        .view-more-button {
+            display: inline-block !important;
+            padding: 12px 30px !important;
+            font-size: 16px !important;
+            color: #fff !important;
+            background-color: #007bff !important; /* Blue */
+            border: none!important;
+            border-radius: 5px !important;
+            text-decoration: none !important;
+            transition: background-color 0.3s ease !important;
+        }
+        .view-more-button:hover {
+            background-color: #0056b3 !important; /* Darker Blue on Hover */
+            cursor: pointer !important;
+        }
+    </style>
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Hospitals</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Hospitals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Hospitals Section -->
+    <section class="hospitals section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Overview of Hospitals</h2>
+                    <p>
+                        The Federal Ministry of Health oversees a network of hospitals that provide specialized, tertiary, and comprehensive healthcare services across Nigeria. Below are summaries of the hospital categories:
+                    </p>
+
+                    <h3>Specialty Hospitals</h3>
+                    <p>
+                        We have <strong>13 Specialty Hospitals</strong> dedicated to providing specialized medical care in areas such as orthopedics, cardiology, ophthalmology, and more. These hospitals cater to specific health needs and offer advanced treatments.
+                    </p>
+                    <div class="button-container">
+                        <a href="{% url 'fmohapp:specialty_hospitals' %}" class="view-more-button">View Specialty Hospitals</a>
+                    </div>
+
+                    <h3>Teaching Hospitals</h3>
+                    <p>
+                        Our <strong>20 Teaching Hospitals</strong> serve as centers of excellence for medical education and research. These institutions train healthcare professionals while delivering high-quality patient care.
+                    </p>
+                    <div class="button-container">
+                     <a href="{% url 'fmohapp:teaching_hospitals' %}" class="view-more-button">View Teaching Hospitals</a>
+
+                    <h3>Federal Medical Centers</h3>
+                    <p>
+                        There are <strong>22 Federal Medical Centers</strong> spread across the country, offering comprehensive healthcare services to the public. These centers play a crucial role in improving access to quality healthcare nationwide.
+                    </p>
+                    <div class="button-container">
+                        <a href="{% url 'fmohapp:federal_medical_centres' %}" class="view-more-button">View Federal Medical Centers</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hospitals Section -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Public Health - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Public Health</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Public Health Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<div class="container my-5">
+  <h1 class="text-center mb-4">PUBLIC HEALTH Policy</h1>
+  <p class="text-center lead mb-5">
+    Explore our key resource materials and policy documents guiding Public Health initiatives.
+  </p>
+
+  <!-- Resource Materials List -->
+  <div class="list-group-item d-flex justify-content-between align-items-center">
+    National Mental Health Act
+    <a href="https://health.gov.ng/docs/National-Mental-Health-Act-2021.pdf" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    National Policy And Strategic Framework For Community Health 2021
+    <a href="#" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    Diabetic Retinopathy Guidelines
+    <a href="https://health.gov.ng/docs/Diabetic-Retinopathy-Guidelines.pdf" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    National Guideline for the Prevention, Control, and Management of Diabetes Mellitus in Nigeria
+    <a href="#" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    Eye on Covid: A national Guideline and Standard Operating Procedure For Eye Care During the COVID-19 Pandemic
+    <a href="#" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    Global Fund Nigeria Malaria Grant: Report of LMIS-HMIS Data Triangulation Exercise - 2020
+    <a href="#" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    ADOLESCENT HEALTH MATTERS ARE ABUJA PRIMARY HEALTHCARE CENTRES DELIVERING
+    <a href="https://www.health.gov.ng/Source/59/ADOLESCENT%20HEALTH%20MATTERS%20ARE%20ABUJA%20PRIMARY%20HEALTHCARE%20CENTRES%20DELIVERING.pdf" class="btn btn-sm btn-primary">Download</a>
+</div>
+
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    National Guidelines for Clinical Management of COVID-19
+    <a href="https://drive.google.com/file/d/1a5Q4boKQSyial5f3phMTgSQlrXM8i2Fw/view?usp=sharing" class="btn btn-sm btn-primary">Download</a>
+</div>
+    <!-- Continue adding additional items as needed -->
+  </div>
+</div>
+{% endblock %}

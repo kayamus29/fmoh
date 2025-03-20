@@ -1,0 +1,78 @@
+{% extends 'base.html' %}  {# Extend base template if you have one #}
+
+{% load static %}  {# Load Django static files #}
+
+{% block title %}Procurement - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Procurement</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>PROCUREMENT</h2>
+                            <p>
+                                The Procurement Department is one of the Common Services Departments of the Ministry. 
+                                The Department was established as part of the implementation of the Public Procurement Act, 2007. 
+                                It provides services to all other Departments, Units, Parastatals, and Agencies of the Ministry 
+                                in line with the Provisions of the Public Procurement Act, 2007 and extant guidelines on 
+                                public health procurement.
+                            </p>
+
+                            <h3>MANDATE</h3>
+                            <p>The Department is to ensure that:</p>
+                            <ol>
+                                <li>Projects conceptualization and packaging match the defined priorities and targets set in the Ministry’s annual budget and Procurement Plans.</li>
+                                <li>All Contracting Processes are conducted in a transparent, open, competitive, and efficient way and in strict compliance with the Public Procurement Act, 2007 and extant guidelines on the award of contracts in the Public Service to achieve value for money, and to conform with the spirit of Due Process Mechanism.</li>
+                                <li>Contracts inflation are checked by ensuring cost reasonableness, accuracy, and comparability in the competitive markets.</li>
+                                <li>Due Process Mechanism is used to establish and sustain an open, transparent, and competitive Procurement System that is integrity-driven, upholds spending within the budget and ensures speedy implementation of projects with a view to achieving value for money without sacrificing quality and standards.</li>
+                            </ol>
+
+                            <h3>FUNCTIONS</h3>
+                            <p>The functions of the Department include:</p>
+                            <ol>
+                                <li>Coordination and preparation of the Annual Procurement Plans for the Ministry and its Parastatals.</li>
+                                <li>Preparation and submission of advertisement documents for publication in the media, soliciting quotations, prequalification, bidding, and request for proposals.</li>
+                                <li>Issuing tender documents for soliciting quotations, prequalification, bidding, and request for proposals.</li>
+                                <li>Processing of award of contracts to the Permanent Secretary, Procurement Planning Committee, and Ministerial Tenders Board.</li>
+                                <li>Process all contracts above the approving limits of Parastatals under the supervision of the Ministry.</li>
+                                <li>Liaise with the Bureau of Public Procurement on all Procurement Matters.</li>
+                                <li>Participate in the preparation of Annual Budget and Rolling Plans.</li>
+                                <li>Monitoring and evaluation of Projects and other Procurement activities.</li>
+                                <li>Preparation of reports and returns on all Procurement Activities.</li>
+                                <li>Handling disposal of unserviceable and obsolete items.</li>
+                                <li>Secretariat of the Ministerial Tenders Board, Procurement Planning Committee, Evaluation Committee, Disposal of Assets Committee, and other Committees on procurement matters.</li>
+                                <li>Carrying out Market and Statistical Surveys, analysis of cost of items for procurement.</li>
+                                <li>Evaluation and Monitoring of all Projects for the Ministry to ensure compliance.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+
+{% endblock %}

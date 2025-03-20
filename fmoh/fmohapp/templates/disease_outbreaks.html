@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Outbreak Alerts</title>
+</head>
+<body>
+    <h1>Disease Outbreak Alerts</h1>
+    <ul>
+        {% for alert in alerts %}
+            <li>
+                <strong>{{ alert.title }}</strong> - {{ alert.get_severity_display }}<br>
+                <em>{{ alert.description }}</em><br>
+                Location: {{ alert.location }}<br>
+                Reported on: {{ alert.date_reported }}
+            </li>
+        {% empty %}
+            <li>No active alerts at the moment.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!-- fmohapp/templates/portal/outbreak_confirm_delete.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Outbreak</title>
+</head>
+<body>
+  <h2>Are you sure you want to delete "{{ outbreak.title }}"?</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <button type="submit">Confirm Delete</button>
+  </form>
+  <a href="{% url 'fmohapp:outbreak_list' %}">Cancel</a>
+</body>
+</html>

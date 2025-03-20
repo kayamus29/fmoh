@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+<!-- fmohapp/templates/portal/newsletter_confirm_delete.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Newsletter</title>
+</head>
+<body>
+  <h2>Are you sure you want to delete "{{ item.title }}"?</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <button type="submit">Confirm Delete</button>
+  </form>
+  <a href="{% url 'fmohapp:newsletter_list' %}">Cancel</a>
+</body>
+</html>

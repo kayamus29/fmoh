@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Newsletter - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+  <div class="container">
+    <div class="bread-inner">
+      <div class="row">
+        <div class="col-12">
+          <h2>Newsletter</h2>
+          <ul class="bread-list">
+            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+            <li><i class="icofont-simple-right"></i></li>
+            <li class="active">Newsletter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<div class="container my-5">
+  <div class="row mb-4">
+    <div class="col-12">
+      <h1 class="text-center mb-3">Latest Newsletters</h1>
+      <p class="text-center text-muted">Our stories are told with a dash of sarcasm</p>
+    </div>
+  </div>
+
+  <!-- Newsletter Cards Section -->
+  <div id="newsletter-container">
+    <!-- Current Page of Newsletter Cards -->
+    <div class="row" id="current-page">
+      {% for newsletter in current_page_newsletters %}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 news-card">
+          <div class="card-img-wrapper">
+            <img src="{% static newsletter.image %}" class="card-img-top" alt="{{ newsletter.title }}">
+            <div class="card-date">{{ newsletter.date }}</div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ newsletter.title }}</h5>
+            <p class="card-text">{{ newsletter.description }}</p>
+          </div>
+          <div class="card-footer text-center bg-white">
+            <a href="{{ newsletter.pdf_url }}" class="btn btn-primary" download>
+              Download Newsletter <i class="icofont-download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="row mt-4">
+      <div class="col-12 d-flex justify-content-between align-items-center">
+        <button id="prev-btn" class="btn btn-outline-primary" {% if current_page == 1 %}disabled{% endif %}>
+          <i class="icofont-arrow-left"></i> Previous
+        </button>
+        
+        <div class="pagination-info">
+          Page <span id="current-page-num">{{ current_page }}</span> of <span id="total-pages">{{ total_pages }}</span>
+        </div>
+        
+        <button id="next-btn" class="btn btn-outline-primary" {% if current_page == total_pages %}disabled{% endif %}>
+          Next <i class="icofont-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Page Numbers -->
+    <div class="row mt-3">
+      <div class="col-12">
+        <nav aria-label="Newsletter pagination">
+          <ul class="pagination justify-content-center">
+            {% for i in page_range %}
+              {% if i == current_page %}
+              <li class="page-item active"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+              {% else %}
+              <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter Subscription -->
+<section class="newsletter-section py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p class="mb-4">Stay updated with the latest health news and policy updates</p>
+        <form class="newsletter-form d-flex">
+          <input type="email" class="form-control" placeholder="Your Email Address" required>
+          <button type="submit" class="btn btn-primary ml-2">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+  /* Styling for newsletter cards */
+  .news-card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+  
+  .card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .news-card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  .card-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(26, 118, 209, 0.9);
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .card-footer {
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 15px;
+  }
+  
+  /* Pagination styling */
+  .pagination-info {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .pagination .page-link {
+    color: #1A76D1;
+    border-radius: 4px;
+    margin: 0 3px;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #1A76D1;
+    border-color: #1A76D1;
+  }
+  
+  /* Newsletter subscription section */
+  .newsletter-section {
+    background-color: #f8f9fa;
+  }
+  
+  .newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-form .form-control {
+    height: 50px;
+    border-radius: 4px;
+  }
+  
+  .newsletter-form .btn {
+    height: 50px;
+    min-width: 120px;
+  }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Set up pagination handlers
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    
+    prevBtn.addEventListener('click', function() {
+      const currentPage = parseInt(document.getElementById('current-page-num').textContent);
+      if (currentPage > 1) {
+        window.location.href = '?page=' + (currentPage - 1);
+      }
+    });
+    
+    nextBtn.addEventListener('click', function() {
+      const currentPage = parseInt(document.getElementById('current-page-num').textContent);
+      const totalPages = parseInt(document.getElementById('total-pages').textContent);
+      if (currentPage < totalPages) {
+        window.location.href = '?page=' + (currentPage + 1);
+      }
+    });
+  });
+</script>
+{% endblock %}

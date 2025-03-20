@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Federal Medical Centres - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Federal Medical Centres</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Food and Drug Programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+<div class="container py-5">
+  <h1 class="text-center mb-5">FEDERAL MEDICAL CENTRES</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">S/N</th>
+          <th scope="col">Name of Hospital</th>
+          <th scope="col">Location</th>
+          <th scope="col">State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Federal Medical Centre</td>
+          <td>Abeokuta</td>
+          <td>Ogun</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Federal Medical Centre</td>
+          <td>Asaba</td>
+          <td>Delta</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Federal Medical Centre</td>
+          <td>Azare</td>
+          <td>Bauchi</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Federal Medical Centre</td>
+          <td>Bida</td>
+          <td>Niger</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Federal Medical Centre</td>
+          <td>Birnin Kebbi</td>
+          <td>Kebbi</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Federal Medical Centre</td>
+          <td>Birnin Kudu</td>
+          <td>Jigawa</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Federal Medical Centre</td>
+          <td>Ebutte-Metta</td>
+          <td>Lagos</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Federal Medical Centre</td>
+          <td>Gombe</td>
+          <td>Gombe</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Federal Medical Centre</td>
+          <td>Gusau</td>
+          <td>Zamfara</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Federal Medical Centre</td>
+          <td>Ido-Ekiti</td>
+          <td>Ekiti</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Federal Medical Centre</td>
+          <td>Jalingo</td>
+          <td>Taraba</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Federal Medical Centre</td>
+          <td>Katsina</td>
+          <td>Katsina</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Federal Medical Centre</td>
+          <td>Keffi</td>
+          <td>Nassarawa</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Federal Medical Centre</td>
+          <td>Lokoja</td>
+          <td>Kogi</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Federal Medical Centre</td>
+          <td>Makurdi</td>
+          <td>Benue</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Federal Medical Centre</td>
+          <td>Nguru</td>
+          <td>Yobe</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Federal Medical Centre</td>
+          <td>Owerri</td>
+          <td>Imo</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Federal Medical Centre</td>
+          <td>Owo</td>
+          <td>Ondo</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Federal Medical Centre</td>
+          <td>Umuahia</td>
+          <td>Abia</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Federal Medical Centre</td>
+          <td>Yenogoa</td>
+          <td>Bayelsa</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Federal Medical Centre</td>
+          <td>Yola</td>
+          <td>Adamawa</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>Federal Staff Hospital</td>
+          <td>Jabi</td>
+          <td>FCT</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

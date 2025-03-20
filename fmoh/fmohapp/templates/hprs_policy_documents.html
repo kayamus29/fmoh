@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Policy Documents - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Policy Documents</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Policy Documents</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<!-- Policy Documents Content -->
+<div class="container my-5">
+    <h1 class="text-center mb-5">National Policy on Health Workforce Migration</h1>
+
+    <!-- Center the button -->
+    <div class="text-center">
+        <a href="#" class="btn btn-primary">
+            Download Policy <i class="icofont-download"></i>
+        </a>
+    </div>
+
+    <!-- Additional content goes here -->
+</div>
+<!-- End Policy Documents Content -->
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    General Services - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>General Services Department</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <!-- Director Card -->
+                            <div class="director-card odd">
+                                <div class="director-image">
+                                    <img src="{% static 'img/suleiman.png' %}" alt="Director's photo" class="img-fluid">
+                                </div>
+                                <div class="director-info">
+                                    <h2 class="director-name">SULEIMAN UMAR M(NIM), MCIPSM, MCIPM</h2>
+                                    <h3 class="director-title">DIRECTOR (GENERAL SERVICES DEPARTMENT), FMOH&SW, ABUJA.</h3>
+                                    <p class="director-bio">
+                                        SULEIMAN UMAR M is a seasoned professional who hails from Mubi South, Adamawa State, Nigeria. With a strong educational background in business administration, he holds a Master of Business Administration (MBA) from Ahmadu Bello University, Zaria, Nigeria, which he obtained in September 2000. Prior to that, he earned a Bachelor of Science (B.Sc.) in Business Administration from the University of Maiduguri in September 1990. His foundational education includes the West African School Certificate (WASC) from Government Secondary School Maiha, Adamawa State, completed in July 1984, and a First School Leaving Certificate from Mubi II Primary School in July 1979.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h2>Mandate of General Services Department</h2>
+                            <p>The mandate of the General Services Department in the Federal Ministry of Health encompasses various responsibilities related to the efficient management of resources and services within the ministry. These include:</p>
+                            <ul>
+                                <li>Organizing and managing logistics and supplies within the ministry.</li>
+                                <li>Conveying important operational information to stakeholders and staff.</li>
+                                <li>Managing relationships with vendors and suppliers.</li>
+                                <li>Building and maintaining a positive operational culture within the ministry.</li>
+                                <li>Facilitating effective communication across departments.</li>
+                                <li>Overseeing the use of cost-effective platforms and technologies for resource management.</li>
+                                <li>Developing and implementing strategies for handling emergencies and crises.</li>
+                                <li>Supporting the ministry's policy advocacy efforts through efficient service delivery.</li>
+                            </ul>
+
+                            <h2>Vision</h2>
+                            <p>To institutionalize a maintenance culture with a view to minimizing waste.</p>
+
+                            <h2>Mission</h2>
+                            <p>To use cost-effective means in ensuring that government assets are maintained and serviced at regular intervals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

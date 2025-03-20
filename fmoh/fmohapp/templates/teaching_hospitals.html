@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Teaching Hospitals - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Teaching Hospitals</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Teaching Hospitals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<div class="container my-5">
+  <h1 class="text-center mb-5">LIST OF ALL FEDERAL TEACHING HOSPITALS</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>S/N</th>
+          <th>Name of Hospital</th>
+          <th>Location</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>University of Benin Teaching Hospital</td>
+          <td>Benin City</td>
+          <td>Edo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>University of Calabar Teaching Hospital</td>
+          <td>Calabar</td>
+          <td>Cross River</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>University of Abuja Teaching Hospital</td>
+          <td>Gwagwalada</td>
+          <td>FCT</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>University College Hospital</td>
+          <td>Ibadan</td>
+          <td>Oyo</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Obafemi Awolowo University Teaching Hospital</td>
+          <td>Ile-Ife</td>
+          <td>Osun</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>University of Ilorin Teaching Hospital</td>
+          <td>Ilorin</td>
+          <td>Kwara</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Irrua Specialist Teaching Hospital</td>
+          <td>Irrua</td>
+          <td>Edo</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>University of Nigeria Teaching Hospital</td>
+          <td>Ituku-Ozalla</td>
+          <td>Enugu</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Jos University Teaching Hospital</td>
+          <td>Jos</td>
+          <td>Plateau</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Aminu Kano University Teaching Hospital</td>
+          <td>Kano</td>
+          <td>Kano</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Lagos University Teaching Hospital</td>
+          <td>Lagos</td>
+          <td>Lagos</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>University of Maiduguri Teaching Hospital</td>
+          <td>Maiduguri</td>
+          <td>Borno</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Nnamdi Azikwe Teaching Hospital</td>
+          <td>Nnewi</td>
+          <td>Anambra</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>University of Port Harcourt Teaching Hospital</td>
+          <td>Port Harcourt</td>
+          <td>Rivers</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Usman Dan Fodio University Teaching Hospital</td>
+          <td>Sokoto</td>
+          <td>Sokoto</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>University of Uyo Teaching Hospital</td>
+          <td>Uyo</td>
+          <td>Akwa Ibom</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Ahmadu Bello University Teaching Hospital</td>
+          <td>Zaria</td>
+          <td>Kaduna</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Federal Teaching Hospital</td>
+          <td>Abakaliki</td>
+          <td>Ebonyi</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Abubakar Tafawa Balewa University Teaching Hospital</td>
+          <td>Bauchi</td>
+          <td>Bauchi</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>National Hospital</td>
+          <td>Abuja</td>
+          <td>FCT</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

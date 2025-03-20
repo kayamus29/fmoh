@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Family Health - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Family Health Department</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>Family Health Department</h2>
+                            <p>The Department of Family Health was created in July 2008 from the Department of Community Development and Population Activities. It plays a pivotal role in improving the health indices of the country and achieving the health-related Sustainable Development Goals (SDGs). Specifically, the Department contributes to the actualization of Goal 3 of the SDGs by 2030 through the Nigeria MPDSR Platform.</p>
+
+                            <h2>Mission</h2>
+                            <p>To develop and coordinate the implementation of policies and programs that promote the health of the family through efficient integrated health services in Nigeria.</p>
+
+                            <h2>Mandate</h2>
+                            <p>The Department is responsible for:</p>
+                            <ul>
+                                <li>Developing policies and implementation frameworks for maternal, newborn, child, and adolescent health.</li>
+                                <li>Providing technical assistance to States and Local Governments for Family Health implementation.</li>
+                                <li>Supplying reproductive health commodities to States and Local Governments.</li>
+                                <li>Implementing Integrated Supportive Supervision of Family Health programs nationwide.</li>
+                            </ul>
+
+                            <h2>Core Departmental Functions</h2>
+                            <p>The Family Health Department's core functions include:</p>
+                            <ul>
+                                <li>Coordinating Nutrition, Reproductive, Maternal, Neonatal, and Child Health programs.</li>
+                                <li>Promoting Gender, Adolescent Health, School Health, Elderly Care, and Wellbeing.</li>
+                                <li>Collaborating with Departments within the Federal Ministry of Health, line Ministries, Development Partners, and other stakeholders to empower individuals and communities to make informed decisions about their health.</li>
+                            </ul>
+
+                            <h2>Divisions in the Department</h2>
+                            <p>The Department consists of five divisions:</p>
+                            <ul>
+                                <li>Child Health Division</li>
+                                <li>Gender, Adolescent School Health, and Elderly Care (GASHE) Division</li>
+                                <li>Health Promotion Division</li>
+                                <li>Nutrition Division</li>
+                                <li>Reproductive Health Division</li>
+                            </ul>
+
+                            <h3>Child Health Division</h3>
+                            <p>This division has three branches:</p>
+                            <ul>
+                                <li>Child Survival</li>
+                                <li>Newborn Care</li>
+                                <li>Maternal Newborn and Child Health Coordination/Programme Management</li>
+                            </ul>
+                            <p>Functions include:</p>
+                            <ul>
+                                <li>Serving as the focal point for issues concerning the health and well-being of Nigerian children.</li>
+                                <li>Providing policy direction and formulating guidelines on child health.</li>
+                                <li>Coordinating all programs and activities related to child health.</li>
+                                <li>Ensuring the implementation of the Integrated Maternal, Newborn, and Child Health (IMNCH) strategy at the State level.</li>
+                            </ul>
+
+                            <h3>Gender, Adolescent School Health, and Elderly Care (GASHE) Division</h3>
+                            <p>This division has three branches:</p>
+                            <ul>
+                                <li>Adolescent/School Health</li>
+                                <li>Care of the Elderly</li>
+                                <li>Gender and Female Genital Mutilation Control</li>
+                            </ul>
+                            <p>Functions include:</p>
+                            <ul>
+                                <li>Providing leadership for programs in Gender, Adolescent School Health, and Elderly Care.</li>
+                                <li>Coordinating activities and managing resources for these programs.</li>
+                            </ul>
+
+                            <h3>Reproductive Health Division</h3>
+                            <p>This division has three branches:</p>
+                            <ul>
+                                <li>Safe Motherhood</li>
+                                <li>Family Planning Services and Logistics</li>
+                                <li>Vesico-Vaginal Fistula Control Programme</li>
+                            </ul>
+                            <h4>Safe Motherhood Branch</h4>
+                            <p>Mandate: Improving maternal and newborn health by reducing maternal mortality through skilled attendance at birth, provision of equipment, and midwifery kits.</p>
+                            <p>Functions:</p>
+                            <ul>
+                                <li>Developing training manuals and national guidelines on maternal and newborn health.</li>
+                                <li>Creating information, education, and communication materials.</li>
+                                <li>Monitoring and supervising safe motherhood programs.</li>
+                            </ul>
+
+                            <h4>Family Planning Branch</h4>
+                            <p>Mandate: Ensuring the availability of contraceptive commodities for quality family planning services.</p>
+                            <p>Functions:</p>
+                            <ul>
+                                <li>Training clinical service providers on modern family planning methods.</li>
+                                <li>Forecasting and procuring family planning commodities.</li>
+                                <li>Building capacity for implementers on the Contraceptive Logistics Management System (CLMS).</li>
+                            </ul>
+
+                            <h4>Vesico-Vaginal Fistula Control Branch</h4>
+                            <p>Functions:</p>
+                            <ul>
+                                <li>Coordinating VVF control activities in existing centers.</li>
+                                <li>Organizing mass repair of VVF cases across the country.</li>
+                                <li>Training medical personnel on VVF management.</li>
+                            </ul>
+
+                            <h3>Health Promotion Division</h3>
+                            <p>This division has three branches:</p>
+                            <ul>
+                                <li>Health Education</li>
+                                <li>Service Improvement</li>
+                                <li>Advocacy/Behaviour Change Communication Materials Development</li>
+                            </ul>
+                            <p>Functions include:</p>
+                            <ul>
+                                <li>Developing healthy public policies and creating supportive environments for health.</li>
+                                <li>Strengthening community action and re-orienting health service providers.</li>
+                                <li>Developing behavior change communication materials and conducting public awareness campaigns.</li>
+                            </ul>
+
+                            <h3>Nutrition Division</h3>
+                            <p>This division has three branches:</p>
+                            <ul>
+                                <li>Micronutrient Deficiency Control</li>
+                                <li>Monitoring and Evaluation/Nutrition Information and Surveillance System (M&E NISS)</li>
+                                <li>Infant and Young Child Feeding</li>
+                            </ul>
+                            <p>Functions include:</p>
+                            <ul>
+                                <li>Providing leadership for nutrition programs and coordinating activities.</li>
+                                <li>Formulating policies and guidelines for service delivery.</li>
+                                <li>Conducting advocacy, education, and capacity-building initiatives.</li>
+                            </ul>
+
+                            <h2>Saving One Million Lives Programme for Results (SOML P for R)</h2>
+                            <p>This government program, launched in 2012, focuses on improving the coverage and quality of Maternal and Child Health (MCH) services. Supported by a $500 million credit from the World Bank, it rewards states with fiscal transfers when they achieve improvements in MCH services.</p>
+                            <p>Functions include:</p>
+                            <ul>
+                                <li>Providing technical support to State Ministries of Health.</li>
+                                <li>Collecting and publishing data timely.</li>
+                                <li>Overseeing the disbursement of funds to states.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

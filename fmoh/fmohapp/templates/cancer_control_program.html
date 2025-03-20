@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    National Cancer Control Programme - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block extra_css %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>National Cancer Control Programme</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start National Cancer Control Programme Section -->
+    <section class="national-cancer-control-programme section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Background</h3>
+                    <p>
+                        The National Cancer Control Programme (NCCP) was established in 2006 as a result of the 58th World Health Assembly Resolution on cancer prevention and control adopted in May 2005. The programme was created to address the escalating cancer incidence in the country.
+                    </p>
+
+                    <h3>Mandate</h3>
+                    <ol>
+                        <li>Public Education on Cancer</li>
+                        <li>Cancer Prevention</li>
+                        <li>Early Diagnosis and Treatment</li>
+                        <li>Effective Therapy</li>
+                        <li>Palliative Care</li>
+                    </ol>
+
+                    <h3>Some Annual and Ongoing Activities</h3>
+                    <ul>
+                        <li>
+                            Ministerial Press briefings and other activities to mark the commemoration of World Cancer Day on February 4th annually.
+                        </li>
+                        <li>
+                            Implementation of the Cancer Access Partnership (CAP) Programme in fourteen (14) Federal Tertiary Hospitals across the country, ensuring the availability of 27 anticancer medicines in 48 formulations, including targeted and hormonal therapies.
+                        </li>
+                        <li>
+                            Commemoration of International Cancer Week in October annually in Abuja through collaboration with relevant stakeholders in the cancer space.
+                        </li>
+                        <li>
+                            Ongoing upgrade of six Oncology Centres of Excellence (UCH Ibadan, UNTH Enugu, ABUTH Zaria, UDUTH Sokoto, UBTH Benin, and National Hospital Abuja) across the country with brachytherapy machines and other equipment. Currently, UCH Ibadan, UBTH Benin, UNTH Enugu, and ABUTH Zaria are fully operational.
+                        </li>
+                        <li>
+                            UNITaid-funded three-year Cervical Cancer Screening Programme for over forty thousand (40,000) women in five states (Kaduna, Lagos, Port Harcourt, Kebbi, Niger) of the federation.
+                        </li>
+                        <li>
+                            Implementation of the Cancer Health Fund (CHF) in six Federal Teaching Hospitals (National Hospital Abuja, Ahmadu Bello University Hospital Zaria, Federal Teaching Hospital Gombe, University College Hospital Ibadan, University of Nigeria Teaching Hospital Enugu, and University of Benin Teaching Hospital) in the first phase for the treatment of indigent cancer patients of breast, cervix, and prostate.
+                        </li>
+                    </ul>
+
+                    <h3>Contact Information</h3>
+                    <p><strong>Dr. Okpikpi O.</strong></p>
+                    <p><strong>NC-NCCP</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End National Cancer Control Programme Section -->
+{% endblock content %}
+
+{% block extra_js %}
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+{% endblock extra_js %}

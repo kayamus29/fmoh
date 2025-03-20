@@ -1,0 +1,15 @@
+<!-- fmohapp/templates/portal/media_confirm_delete.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Media</title>
+</head>
+<body>
+  <h2>Are you sure you want to delete "{{ item.title }}"?</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <button type="submit">Confirm Delete</button>
+  </form>
+  <a href="{% url 'fmohapp:media_list' %}">Cancel</a>
+</body>
+</html>

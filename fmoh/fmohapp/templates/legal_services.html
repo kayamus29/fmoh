@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Legal Services Unit - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Legal Services Unit</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>LEGAL SERVICES UNIT</h2>
+                            <p>The Legal Services Unit of the Federal Ministry of Health is an extension of the Chamber of the Attorney General of the Federation and Minister of Justice; hence it serves as its liaison office.</p>
+                            
+                            <h3>MANDATE</h3>
+                            <p>The mandate of the Legal Services Unit is to provide high-quality legal services to the Federal Ministry of Health and all its Parastatals and Agencies...</p>
+                            
+                            <h3>VISION</h3>
+                            <p>To offer quality legal services to the Federal Ministry of Health.</p>
+                            
+                            <h3>MISSION</h3>
+                            <p>To ensure that the Federal Ministry of Health is legally protected in its quest to deliver quality healthcare services to all Nigerians.</p>
+                            
+                            <h3>STRUCTURE</h3>
+                            <p>The Unit is headed by the Legal Adviser who is a Director and is assisted by Assistant Legal Advisers...</p>
+                            
+                            <h3>FUNCTIONS</h3>
+                            <p></p>
+                            <ul>
+                                <li>Proffering legal advice and opinions to the Ministry, its Agencies, and Parastatals;</li>
+                                <li>Legal representation of the Ministry in courts and tribunals;</li>
+                                <li>Preparation and vetting of Contract Agreements;</li>
+                                <li>Drafting and vetting legislation for the Ministry;</li>
+                                <li>Representation at public Hearings at the National Assembly;</li>
+                                <li>Vetting and release of Advance Payment Guarantees (APGs);</li>
+                                <li>Serves as the Freedom of Information (FOI) Desk of the ministry;</li>
+                                <li>Maintains custody of the ministry’s official seal.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+
+{% endblock %}

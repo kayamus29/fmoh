@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Our Services - Federal Ministry of Health Nigeria{% endblock %}
+
+{% block content %}
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="bread-inner">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Our Policies</h2>
+                    <ul class="bread-list">
+                        <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                        <li><i class="icofont-simple-right"></i></li>
+                        <li class="active">Our Policies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<div class="container my-5">
+  <h1 class="text-center mb-5">Explore Our Policies</h1>
+  <div class="row">
+    <!-- Family Health Card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Family Health</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Family Health services focus on promoting wellness at the family level through preventive care, health education, and support programs tailored for all ages.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:family_health_policy' %}" class="btn btn-primary">View All Policies</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Public Health Card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Public Health</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Public Health services work to safeguard communities through disease prevention, health promotion, and ensuring access to essential healthcare resources.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:public_health_policy' %}" class="btn btn-primary">View All Policies</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hospital Services Card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Hospital Services</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Hospital Services ensure that quality care is delivered through modern facilities, dedicated staff, and a patient-focused approach.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:hospital_services_policy' %}" class="btn btn-primary">View All Policies</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food and Drugs Card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header" style="background-color: #008751; color: #fff;">
+          <h4 class="card-title mb-0">Food and Drugs</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Our Food and Drugs services regulate and ensure the safety, quality, and accessibility of pharmaceuticals and food products across the nation.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="{% url 'fmohapp:family_health' %}" class="btn btn-primary">View All Policies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

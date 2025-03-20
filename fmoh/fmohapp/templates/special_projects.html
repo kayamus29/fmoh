@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Special Projects - Federal Ministry of Health Nigeria
+{% endblock title %}
+
+{% block content %}
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Special Projects</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'fmohapp:index' %}">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Departments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-content">
+                        <div class="body-text">
+                            <h2>Special Projects</h2>
+                            <p>To address specific health-related challenges, improve healthcare services, and advance the ministry's goals. These projects focus on diverse areas, including public health initiatives, infrastructure development, health information systems implementation, disease prevention and control, capacity building, emergency response planning, research, health policy implementation, community health promotion, and collaborative programs.</p>
+
+                            <p></p>
+							<h2>Mandate</h2>
+                            <p>
+                                The office of the Director of Special Projects in the Ministry of Health is tasked with overseeing and implementing strategic initiatives that address specific health challenges, drive innovation, and contribute to the overall improvement of healthcare services. Specific responsibilities include:
+                            </p>
+                            <ul>
+                                <li>Developing and overseeing the implementation of special projects within the Ministry of Health.</li>
+                                <li>Contributing to the development of strategic initiatives that address specific health challenges or opportunities.</li>
+                                <li>Ensuring effective allocation of resources for the successful implementation of special projects.</li>
+                                <li>Fostering collaboration between different departments and stakeholders for successful project outcomes.</li>
+                                <li>Driving innovation and improvement in healthcare delivery and services.</li>
+                                <li>Contributing to the strategic planning process of the Ministry of Health.</li>
+                                <li>Mitigating risks associated with special projects and managing changes effectively.</li>
+                                <li>Assessing the progress and impact of special projects.</li>
+                                <li>Integrating special projects with existing health policies and regulations.</li>
+                                <li>Collaborating with external organizations, NGOs, or international agencies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+{% endblock content %}
+
+{
